@@ -60,8 +60,7 @@ namespace evanslib{
 
         public static Dictionary<string, object> Dict(){
             var evanslibdict = new Dictionary<string, object>();
-                Print(evanslibdict);
-                return evanslibdict;
+            return evanslibdict;
         }
 
         public static void ModifyDict(Dictionary<string, object> dict, string name, string value){
