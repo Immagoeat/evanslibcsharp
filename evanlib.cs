@@ -20,13 +20,13 @@ namespace evanslib{
             else{
                 Console.WriteLine(value);
             }
-}
+        }
 
         public static string Input(){
             string? input = Console.ReadLine();
             if (string.IsNullOrEmpty(input)){
                 
-                exitError("Input of 'null'");
+                exitError("Input value of 'null'");
                 return "";
             }
             return input;
