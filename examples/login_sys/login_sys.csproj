@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <Compile Include="/home/evan/Desktop/evanslibcsharp/evanlib.cs" />
+  </ItemGroup>
+
 </Project>

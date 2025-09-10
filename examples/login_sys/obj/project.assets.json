@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/evan/Desktop/evanslibcsharp/evanslivcsharp.csproj",
-      "projectName": "evanslivcsharp",
-      "projectPath": "/home/evan/Desktop/evanslibcsharp/evanslivcsharp.csproj",
+      "projectUniqueName": "/home/evan/Desktop/evanslibcsharp/examples/login_sys/login_sys.csproj",
+      "projectName": "login_sys",
+      "projectPath": "/home/evan/Desktop/evanslibcsharp/examples/login_sys/login_sys.csproj",
       "packagesPath": "/home/evan/.nuget/packages/",
-      "outputPath": "/home/evan/Desktop/evanslibcsharp/obj/",
+      "outputPath": "/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/evan/.nuget/NuGet/NuGet.Config"
