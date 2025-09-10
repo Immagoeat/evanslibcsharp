@@ -1,1 +1,3 @@
-Console.WriteLine("Hello");
+using evanslib;
+
+Evanslib.Print("Hello!");
