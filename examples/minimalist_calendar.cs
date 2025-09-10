@@ -19,5 +19,15 @@ if (question == "Date")
 
 if (question == "Military time")
 {
-    Evanslib.currentDT();
+    Evanslib.currentMT();
+}
+
+if (question == "US time")
+{
+    Evanslib.currentUT();
+}
+
+else
+{
+    Evanslib.exitError("Could not find what you were looking for, check it starts with a capital letter and that is is spelled correctly.");
 }
