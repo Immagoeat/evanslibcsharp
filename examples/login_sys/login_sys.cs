@@ -3,6 +3,9 @@ using evanslib;
 
 begining:;
 
+//Create the dictionary in which our users are stored
+var users = Evanslib.Dict();
+
 Evanslib.Print("Sign up or log in?");
 string option = Evanslib.Input();
 
@@ -14,12 +17,18 @@ if (option == "Sign up"){
     string newusername = Evanslib.Input();
     Evanslib.Print("Password: ");
     string newpassword = Evanslib.Input();
-    //Create dictionary
-    var users = Evanslib.Dict();
+    //Ammend the dictionary
     Evanslib.ModifyDict(users, newusername, newpassword);
     goto begining;
 }
 
+if (option == "Log in"){
+    //Get the details of their account
+    Evanslib.Print("Username: ");
+    string attemptusername = Evanslib.Input();
+    Evanslib.Print("Password: ");
+    string attemptpassword = Evanslib.Input();
+}
 
 else {
     Evanslib.Error("There seems to be a misspelling. Please try again.");

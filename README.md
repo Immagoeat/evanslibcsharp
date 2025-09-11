@@ -11,5 +11,6 @@ COMMANDS:
     currentDT(); (Both Date and military time)
     var DICTIONARYNAME = Evanslib.Dict(); (Creates a dictionary w whatever name you assign)
     Evanslib.ModifyDict(myDict, "NAME", "VALUE"); (Creates an entry in the dictionary with a name and value, outputs "NAME: VALUE")
+    Error("ERROR"); (You can put an error in your code and have it not close.)
     exitError("ERRORCODE");
     Exit();
