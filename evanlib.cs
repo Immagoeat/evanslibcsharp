@@ -67,6 +67,11 @@ namespace evanslib{
             dict[name] = value;
         }
 
+        public static void Error(string crashreason){
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Evanslib ERROR: " + crashreason);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
         public static void exitError(string crashreason){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Evanslib ERROR: " + crashreason);
