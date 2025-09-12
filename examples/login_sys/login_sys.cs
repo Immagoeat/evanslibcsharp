@@ -28,6 +28,14 @@ if (option == "Log in"){
     string attemptusername = Evanslib.Input();
     Evanslib.Print("Password: ");
     string attemptpassword = Evanslib.Input();
+
+    foreach (KeyValuePair<string, string> gyatt in users){
+        if (attemptusername == gyatt.Key && attemptpassword == gyatt.Value){
+            Evanslib.Print("Login successful!");
+            break;
+        }
+    }
+
 }
 
 else {

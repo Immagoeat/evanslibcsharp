@@ -58,12 +58,12 @@ namespace evanslib{
             Print(dt.ToString("MMM"));
         }
 
-        public static Dictionary<string, object> Dict(){
-            var evanslibdict = new Dictionary<string, object>();
+        public static Dictionary<string, string> Dict(){
+            var evanslibdict = new Dictionary<string, string>();
             return evanslibdict;
         }
 
-        public static void ModifyDict(Dictionary<string, object> dict, string name, string value){
+        public static void ModifyDict(Dictionary<string, string> dict, string name, string value){
             dict[name] = value;
         }
 
