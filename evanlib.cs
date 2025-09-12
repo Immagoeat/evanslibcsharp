@@ -11,7 +11,7 @@ namespace evanslib{
 
 
         public static void Print<T>(T value){
-            if (value is Dictionary<string, object> dict){
+            if (value is Dictionary<string, string> dict){
                 foreach (var kvp in dict){
                     Console.WriteLine($"{kvp.Key}: {kvp.Value}");
                 }        

@@ -31,12 +31,13 @@ if (option == "Log in"){
 
     foreach (KeyValuePair<string, string> gyatt in users){
         if (attemptusername == gyatt.Key && attemptpassword == gyatt.Value){
-            Evanslib.Print("Login successful!");
-            break;
+            Evanslib.Print("Hello");
         }
     }
 
 }
+
+
 
 else {
     Evanslib.Error("There seems to be a misspelling. Please try again.");
