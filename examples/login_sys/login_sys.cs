@@ -9,7 +9,7 @@ var users = Evanslib.Dict();
 Evanslib.Print("Sign up or log in?");
 string option = Evanslib.Input();
 
-//Only respond with 'Sign up' or 'Log in'. Anything else will be an error (see line)
+//Only respond with 'Sign up' or 'Log in'. Anything else will be an error (see line 33)
 
 if (option == "Sign up"){
     //Get username and password
