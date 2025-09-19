@@ -11,9 +11,11 @@ Some functions to save you a bit of work
 The print function is exactly as it sounds. It prints. Here is an example of the command
 
     Print("STRING"); (Prints a string, or int)
+### Input
+This also takes an input, but you call it a bit differently than the print function.
 
-    Print(); (Prints a string, or int)
-    Input(); (Gets an input from user)
+    string/int VARNAME = Evanslib.Input(); (Gets an input from user)
+
     currentDate(); (Gets day)
     currentTimeMT(); (Military time)
     currentTimeUT(); (US time)
