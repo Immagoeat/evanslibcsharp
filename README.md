@@ -4,7 +4,7 @@ Evanslib for C# is a great, more user-friendly way to code in C#
 # Commands
 Here you will see a list of all the commands in Evanslib
 
-## Better of life improvements
+## Quality of life improvements
 Some functions to save you a bit of work
 
 ### Print
