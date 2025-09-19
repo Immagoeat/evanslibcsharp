@@ -1,10 +1,12 @@
 using System.Reflection.Metadata;
 using evanslib;
 
-begining:;
+
 
 //Create the dictionary in which our users are stored
 var users = Evanslib.Dict();
+
+begining:;
 
 Evanslib.Print("Sign up or log in?");
 string option = Evanslib.Input();
