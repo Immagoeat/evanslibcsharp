@@ -1,0 +1,12 @@
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.AssemblyInfoInputs.cache
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.AssemblyInfo.cs
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.csproj.CoreCompileInputs.cache
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.sourcelink.json
+/home/evan/Desktop/evanslibcsharp/bin/Release/net9.0/evanslibcsharp.deps.json
+/home/evan/Desktop/evanslibcsharp/bin/Release/net9.0/evanslibcsharp.dll
+/home/evan/Desktop/evanslibcsharp/bin/Release/net9.0/evanslibcsharp.pdb
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.dll
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/refint/evanslibcsharp.dll
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/evanslibcsharp.pdb
+/home/evan/Desktop/evanslibcsharp/obj/Release/net9.0/ref/evanslibcsharp.dll
