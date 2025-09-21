@@ -9,10 +9,12 @@
     <Description>A simple C# utility library</Description>
     <PackageProjectUrl>https://github.com/Immagoeat/evanslibcsharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Immagoeat/evanslibcsharp</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
 <ItemGroup>
   <Compile Remove="examples\**\*.cs" />
+  <None Include="docs\README.md" Pack="true" PackagePath="\"/>
 </ItemGroup>
 
 
