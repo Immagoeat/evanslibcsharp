@@ -10,6 +10,7 @@
     <PackageProjectUrl>https://github.com/Immagoeat/evanslibcsharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Immagoeat/evanslibcsharp</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Nullable>enable</Nullable>
 
   </PropertyGroup>
 
