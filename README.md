@@ -60,5 +60,14 @@ To call an error, call
 
     Error("ERROR");
 
-    exitError("ERRORCODE");
+### Exiting with an error
+In the case you need to exit with an error, call
+
+    exitError("ERRORMESSAGE");
+
+### Exiting
+If you would like to exit altogether, you can call
+
     Exit();
+
+# How to setup
