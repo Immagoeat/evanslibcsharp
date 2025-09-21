@@ -10,7 +10,7 @@ Some functions to save you a bit of work
 ### Print
 The print function is exactly as it sounds. It prints. Here is an example of the command
 
-    Print("STRING"); (CAn use a string or int)
+    Print("STRING"); (Can use a string or int)
 ### Input
 This also takes an input, but you call it a bit differently than the print function.
 
@@ -71,3 +71,8 @@ If you would like to exit altogether, you can call
     Exit();
 
 # How to setup
+Run the following command in the terminal of your folder
+
+    dotnet add package EvansLib --version 1.0.1
+
+Then, enter "using Evanslib" in your code

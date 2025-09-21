@@ -9,7 +9,7 @@
 
 
   <ItemGroup>
-    <Compile Include="../../evanlib.cs" />
+    <Compile Include="../../evanslibcsharp.cs" />
   </ItemGroup>
 
 </Project>

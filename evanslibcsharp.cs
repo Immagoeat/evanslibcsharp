@@ -23,6 +23,7 @@ namespace evanslib{
         }
 
         public static string Input(){
+            #nullable enable warnings
             string? input = Console.ReadLine();
             if (string.IsNullOrEmpty(input)){
                 
