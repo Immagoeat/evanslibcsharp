@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="/home/evan/Desktop/evanslibcsharp/evanlib.cs" />
+    <Compile Include="../../evanlib.cs" />
   </ItemGroup>
 
 </Project>
