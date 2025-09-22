@@ -58,12 +58,12 @@ Calling an error, exiting with an error, or exiting all together, it's easy with
 ### Calling an error
 To call an error, call
 
-    Error("ERROR");
+    Error("ERROR", "ERROR_NUMBER");
 
 ### Exiting with an error
 In the case you need to exit with an error, call
 
-    exitError("ERRORMESSAGE");
+    exitError("ERRORMESSAGE", "ERROR_NUMBER");
 
 ### Exiting
 If you would like to exit altogether, you can call
@@ -73,6 +73,6 @@ If you would like to exit altogether, you can call
 # How to setup
 Run the following command in the terminal of your folder
 
-    dotnet add package EvansLib --version 1.0.1
+    dotnet add package EvansLib --version 1.1.0
 
 Then, enter "using Evanslib" in your code

@@ -1,0 +1,15 @@
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.GeneratedMSBuildEditorConfig.editorconfig
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.AssemblyInfoInputs.cache
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.AssemblyInfo.cs
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.csproj.CoreCompileInputs.cache
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.sourcelink.json
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/bin/Debug/net9.0/minimalist_calendar
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/bin/Debug/net9.0/minimalist_calendar.deps.json
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/bin/Debug/net9.0/minimalist_calendar.runtimeconfig.json
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/bin/Debug/net9.0/minimalist_calendar.dll
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/bin/Debug/net9.0/minimalist_calendar.pdb
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.dll
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/refint/minimalist_calendar.dll
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.pdb
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/minimalist_calendar.genruntimeconfig.cache
+/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/obj/Debug/net9.0/ref/minimalist_calendar.dll

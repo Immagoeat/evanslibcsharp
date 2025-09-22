@@ -26,7 +26,10 @@ namespace evanslib{
             string? input = Console.ReadLine();
             if (string.IsNullOrEmpty(input)){
                 
-                exitError("Input value of 'null'");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("EVANSLIB ERROR (1): Input of 'null' (ELER1)");
+                Console.ForegroundColor = ConsoleColor.White;
+                Environment.Exit(0);
                 return "";
             }
             return input;
@@ -67,14 +70,14 @@ namespace evanslib{
             dict[name] = value;
         }
 
-        public static void Error(string crashreason){
+        public static void Error(string crashreason, string number){
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Evanslib ERROR: " + crashreason);
+            Console.WriteLine("ERROR " + number + ": " + crashreason);
             Console.ForegroundColor = ConsoleColor.White;
         }
-        public static void exitError(string crashreason){
+        public static void exitError(string crashreason, string number){
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Evanslib ERROR: " + crashreason);
+            Console.WriteLine("ERROR " + number + ": " + crashreason);
             Console.ForegroundColor = ConsoleColor.White;
             Environment.Exit(0);
         }

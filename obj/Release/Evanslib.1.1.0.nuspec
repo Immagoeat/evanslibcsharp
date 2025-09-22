@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Evanslib</id>
+    <version>1.1.0</version>
+    <authors>Immagoeat</authors>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Immagoeat/evanslibcsharp</projectUrl>
+    <description>A simple C# utility library</description>
+    <repository type="git" url="https://github.com/Immagoeat/evanslibcsharp" commit="be5e833ea84207cad97d57f082eef6ae7b99b4a9" />
+    <dependencies>
+      <group targetFramework="net9.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/evan/Desktop/evanslibcsharp/bin/Release/net9.0/evanslibcsharp.dll" target="lib/net9.0/evanslibcsharp.dll" />
+    <file src="/home/evan/Desktop/evanslibcsharp/README.md" target="/README.md" />
+  </files>
+</package>

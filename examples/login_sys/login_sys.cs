@@ -42,6 +42,6 @@ if (option == "Log in"){
 
 
 else {
-    Evanslib.Error("There seems to be a misspelling. Please try again.");
+    Evanslib.Error("There seems to be a misspelling. Please try again.", "1");
     goto begining;
 }
