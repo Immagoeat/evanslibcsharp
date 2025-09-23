@@ -8,22 +8,22 @@ string question = Evanslib.Input();
 
 if (question == "All") {
     Evanslib.currentDT();
-    goto end;
+    Evanslib.Exit();
 }
 
 if (question == "Date") {
     Evanslib.currentDate();
-    goto end;
+    Evanslib.Exit();
 }
 
 if (question == "Military time") {
     Evanslib.currentTimeMT();
-    goto end;
+    Evanslib.Exit();
 }
 
 if (question == "US time") {
     Evanslib.currentTimeUT();
-    goto end;
+    Evanslib.Exit();
 }
 
 
