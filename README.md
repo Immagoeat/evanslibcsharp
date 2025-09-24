@@ -1,5 +1,13 @@
 # Evan's Library to C#
 Evanslib for C# is a great, more user-friendly way to code in C#
+The github will be more updated than the NuGet page, may be unstable or crash
+
+# Versions
+## Current version
+Evanslib is currently on version 1.1.1. In this version, error numbers are now integers and not strings
+
+## 1.1.0
+Default benchmark, goes up to version 1.1.1
 
 # Commands
 Here you will see a list of all the commands in Evanslib
@@ -58,12 +66,12 @@ Calling an error, exiting with an error, or exiting all together, it's easy with
 ### Calling an error
 To call an error, call
 
-    Error("ERROR", "ERROR_NUMBER");
+    Error("ERROR", ERROR_NUMBER);
 
 ### Exiting with an error
 In the case you need to exit with an error, call
 
-    exitError("ERRORMESSAGE", "ERROR_NUMBER");
+    exitError("ERRORMESSAGE", ERROR_NUMBER);
 
 ### Exiting
 If you would like to exit altogether, you can call

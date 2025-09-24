@@ -70,12 +70,12 @@ namespace evanslib{
             dict[name] = value;
         }
 
-        public static void Error(string crashreason, string number){
+        public static void Error(string crashreason, int number){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("ERROR " + number + ": " + crashreason);
             Console.ForegroundColor = ConsoleColor.White;
         }
-        public static void exitError(string crashreason, string number){
+        public static void exitError(string crashreason, int number){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("ERROR " + number + ": " + crashreason);
             Console.ForegroundColor = ConsoleColor.White;
