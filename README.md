@@ -42,6 +42,11 @@ Displays the 12 hr time in terminal
 
     currentTimeUT();
 
+### Current Month
+Displays the 3 letter code for the month
+
+    Evanslib.currentMonth();
+
 ### Current Date and Time
 Displays the 12 hr time and date in terminal
 
