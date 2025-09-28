@@ -20,7 +20,7 @@ if (option == "Sign up"){
     Evanslib.Print("Password: ");
     string newpassword = Evanslib.Input();
     //Ammend the dictionary
-    Evanslib.ModifyDict(users, newusername, newpassword);
+    Evanslib.modifyDict(users, newusername, newpassword);
     goto begining;
 }
 
@@ -42,6 +42,6 @@ if (option == "Log in"){
 
 
 else {
-    Evanslib.Error("There seems to be a misspelling. Please try again.", "1");
+    Evanslib.Error("There seems to be a misspelling. Please try again.", 1);
     goto begining;
 }

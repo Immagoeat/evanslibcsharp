@@ -4,14 +4,19 @@ using System;
 using System.Collections.Generic;
 using Microsoft.VisualBasic;
 using System.Security.Cryptography.X509Certificates;
-using OpenTK;
-using OpenTK.Windowing.Common;
-using OpenTK.Windowing.Desktop;
-using OpenTK.Graphics.OpenGL4;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Reflection.Metadata.Ecma335;
 
 namespace evanslib{
 
     public class Evanslib{
+    
+        
+        public static string date = DateTime.Now.ToString("MM/dd/yyyy");
+        public static string timeMT = DateTime.Now.ToString("HH:mm:ss");
+        public static string timeUT = DateTime.Now.ToString("hh:mm:ss tt");
+        public static string month = DateTime.Now.ToString("MMM");
+        public static string dateTime = DateTime.Now.ToString("MM/dd/yyyy" + " " + "HH:mm:ss");
 
 
         public static void Print<T>(T value){
@@ -19,6 +24,26 @@ namespace evanslib{
                 foreach (var values in dict){
                     Console.WriteLine($"{values.Key}: {values.Value}");
                 }        
+            }
+
+            else if (value is "Evanslib.date"){
+                Console.WriteLine(date);
+            }
+
+            else if (value is "Evanslib.timeMT"){
+                Console.WriteLine(timeMT);
+            }
+
+            else if (value is "Evanslib.timeUT"){
+                Console.WriteLine(timeUT);
+            }
+
+            else if (value is "Evanslib.month"){
+                Console.WriteLine(month);
+            }
+
+            else if (value is "Evanslib.dateTime"){
+                Console.WriteLine(dateTime);
             }
             
             else{
@@ -39,43 +64,13 @@ namespace evanslib{
             return input;
         }
 
-        public static void currentDate(){
-            DateTime date = DateTime.Now.Date;
-            Print(date.ToString("MM/dd/yyyy"));
-        }
-
-        public static void currentTimeMT(){
-            DateTime time = DateTime.Now;
-            Print(time.ToString("HH:mm:ss"));
-        }
-
-        public static void currentTimeUT(){
-            DateTime time = DateTime.Now;
-            Print(time.ToString("hh:mm:ss tt"));
-        }
-
-        public static void currentDT(){
-            DateTime dt = DateTime.Now;
-            Print(dt);
-        }
-
-        public static void currentMonth(){
-            DateTime dt = DateTime.Now;
-
-            Print(dt.ToString("MMM"));
-        }
-
         public static Dictionary<string, string> Dict(){
             var evanslibdict = new Dictionary<string, string>();
             return evanslibdict;
         }
 
-        public static void ModifyDict(Dictionary<string, string> dict, string name, string value){
+        public static void modifyDict(Dictionary<string, string> dict, string name, string value){
             dict[name] = value;
-        }
-
-        public static void createWindow(string windowname){
-            
         }
 
         public static void Error(string crashreason, int number){

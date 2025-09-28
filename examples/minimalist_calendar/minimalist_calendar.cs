@@ -7,30 +7,30 @@ Evanslib.Print("What would you like?");
 string question = Evanslib.Input();
 
 if (question == "All") {
-    Evanslib.currentDT();
+    Evanslib.Print("Evanslib.dateTime");
     Evanslib.Exit();
 }
 
 if (question == "Date") {
-    Evanslib.currentDate();
+    Evanslib.Print("Evanslib.date");
     Evanslib.Exit();
 }
 
 if (question == "Military time") {
-    Evanslib.currentTimeMT();
+    Evanslib.Print("Evanslib.timeMT");
     Evanslib.Exit();
 }
 
 if (question == "US time") {
-    Evanslib.currentTimeUT();
+    Evanslib.Print("Evanslib.timeUT");
     Evanslib.Exit();
 }
 
-
-
-else {
-    Evanslib.exitError("Could not find what you were looking for, check it starts with a capital letter and that is is spelled correctly.", "1");
+if (question == "Month") {
+    Evanslib.Print("Evanslib.month");
+    Evanslib.Exit();
 }
 
-// You could also use 'Exit();' function, that will be used in login_sys.cs example.
-end:;
+else {
+    Evanslib.exitError("Could not find what you were looking for, check it starts with a capital letter and that is is spelled correctly.", 1);
+}

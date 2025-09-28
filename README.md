@@ -3,11 +3,15 @@ Evanslib for C# is a great, more user-friendly way to code in C#
 The github will be more updated than the NuGet page, may be unstable or crash
 
 # Versions
-## Current version
-Evanslib is currently on version 1.1.1. In this version, error numbers are now integers and not strings
+
+## 1.1.2
+The latest version, time and date functions now work differently (go to the "Time" section), and the name of the dictionary ammending changes slightly so it fits with the pattern of all other naming
+
+## 1.1.1
+In Evanslib version 1.1.1, error numbers are integers and no longer strings
 
 ## 1.1.0
-Default benchmark, goes up to version 1.1.1
+Default benchmark, goes up to version 1.1.2
 
 # Commands
 Here you will see a list of all the commands in Evanslib
@@ -27,7 +31,7 @@ This also takes an input, but you call it a bit differently than the print funct
 ## Time
 Here are some functions for calling time
 
-### Currint Date
+### Current Date
 This function displays the current date (by the system) in the terminal
 
     currentDate();
@@ -63,7 +67,7 @@ To create a dictionary, call
 ### Adding to dictionary
 To add a name and value to the dictionary, call
 
-    Evanslib.ModifyDict(DICTIONARYNAME, "NAME", "VALUE"); (Creates an entry in the dictionary with a name and value, outputs "NAME: VALUE")
+    Evanslib.modifyDict(DICTIONARYNAME, "NAME", "VALUE"); (Creates an entry in the dictionary with a name and value, outputs "NAME: VALUE")
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
@@ -84,8 +88,8 @@ If you would like to exit altogether, you can call
     Exit();
 
 # How to setup
-Run the following command in the terminal of your folder
+Run the following command in the terminal of your folder (can go up to 1.1.2)
 
     dotnet add package EvansLib --version 1.1.0
 
-Then, enter "using Evanslib" in your code
+Then, enter "using Evanslib;" in your code

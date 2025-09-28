@@ -11,8 +11,4 @@
     <Compile Include="../../evanslibcsharp.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="OpenTK" Version="4.9.4" />
-  </ItemGroup>
-
 </Project>
