@@ -4,10 +4,10 @@ using System;
 using System.Collections.Generic;
 using Microsoft.VisualBasic;
 using System.Security.Cryptography.X509Certificates;
+using OpenTK;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Graphics.OpenGL4;
-using OpenTK.Mathematics;
 
 namespace evanslib{
 
@@ -75,12 +75,7 @@ namespace evanslib{
         }
 
         public static void createWindow(string windowname){
-            var nativeSettings = new NativeWindowSettings() {
-            Size = new Vector2i(800, 600),
-            Title = "Hello OpenTK!"
-        };
-
-        using var window = new GameWindow(GameWindowSettings.Default, nativeSettings);
+            
         }
 
         public static void Error(string crashreason, int number){
