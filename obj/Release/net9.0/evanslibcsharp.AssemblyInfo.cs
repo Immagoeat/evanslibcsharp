@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A simple C# utility library")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.2+c135296c7bb69ab0ac2db6f749b3cbc5584652a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.2-updated.readme+c9d6ba1629fed368e75f11bc0b0d352a3b39ca51")]
 [assembly: System.Reflection.AssemblyProductAttribute("evanslibcsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("evanslibcsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.2.0")]
