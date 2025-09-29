@@ -29,32 +29,32 @@ This also takes an input, but you call it a bit differently than the print funct
     string/int VARNAME = Evanslib.Input();
 
 ## Time
-Here are some functions for calling time
+Here are some functions for calling time (you can only print for now)
 
 ### Current Date
 This function displays the current date (by the system) in the terminal
 
-    currentDate();
+    Print("Evanslib.date")
 
 ### Current Time (Military time [24 hour time])
 Displays the 24 hr time in terminal
 
-    currentTimeMT();
+    Print("Evanslib.timeMT")
 
 ### Current Time (12 hour time)
 Displays the 12 hr time in terminal
 
-    currentTimeUT();
+    Print("Evanslib.timeUT")
 
 ### Current Month
 Displays the 3 letter code for the month
 
-    Evanslib.currentMonth();
+    Print("Evanslib.month")
 
 ### Current Date and Time
 Displays the 12 hr time and date in terminal
 
-    currentDT(); (Both Date and military time)
+    Print("Evanslib.dateTime")
 
 ## Dictionary functions
 The Evanslib dictionary is easy to learn, in contrast to c#'s and its quick and easy
