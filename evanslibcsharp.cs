@@ -26,25 +26,6 @@ namespace evanslib{
                 }        
             }
 
-            else if (value is "Evanslib.date"){
-                Console.WriteLine(date);
-            }
-
-            else if (value is "Evanslib.timeMT"){
-                Console.WriteLine(timeMT);
-            }
-
-            else if (value is "Evanslib.timeUT"){
-                Console.WriteLine(timeUT);
-            }
-
-            else if (value is "Evanslib.month"){
-                Console.WriteLine(month);
-            }
-
-            else if (value is "Evanslib.dateTime"){
-                Console.WriteLine(dateTime);
-            }
             
             else{
                 Console.WriteLine(value);

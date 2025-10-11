@@ -2,7 +2,6 @@ using System.Reflection.Metadata;
 using evanslib;
 
 
-
 //Create the dictionary in which our users are stored
 var users = Evanslib.Dict();
 

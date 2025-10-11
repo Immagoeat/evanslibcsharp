@@ -1,0 +1,15 @@
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/bin/Debug/net9.0/login_sys
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/bin/Debug/net9.0/login_sys.deps.json
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/bin/Debug/net9.0/login_sys.runtimeconfig.json
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/bin/Debug/net9.0/login_sys.dll
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/bin/Debug/net9.0/login_sys.pdb
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.GeneratedMSBuildEditorConfig.editorconfig
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.AssemblyInfoInputs.cache
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.AssemblyInfo.cs
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.csproj.CoreCompileInputs.cache
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.sourcelink.json
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.dll
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/refint/login_sys.dll
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.pdb
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/login_sys.genruntimeconfig.cache
+/home/evan/Desktop/evanslibcsharp/examples/login_sys/obj/Debug/net9.0/ref/login_sys.dll
