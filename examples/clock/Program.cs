@@ -14,12 +14,10 @@ string input = Evanslib.Input();
 
 
 if (input == "1"){
-    //Creating time function (dateTime used in this example)
-    var time = Evanslib.dateTime;
 
     //Clears the console then prints the time before restarting to program
     Console.Clear();
-    Evanslib.Print(time);
+    Evanslib.Print(Evanslib.timeUT);
     Thread.Sleep(2000);
     goto beginning;
 }
