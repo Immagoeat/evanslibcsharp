@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kZcEIvlvudY=",
+  "success": true,
+  "projectFilePath": "/home/evan/Desktop/evanslibcsharp/examples/clock/clock.csproj",
+  "expectedPackageFiles": [
+    "/home/evan/.nuget/packages/evanslib/1.1.3/evanslib.1.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}

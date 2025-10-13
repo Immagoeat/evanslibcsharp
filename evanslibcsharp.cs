@@ -11,7 +11,6 @@ namespace evanslib{
 
     public class Evanslib{
     
-        
         public static string date = DateTime.Now.ToString("MM/dd/yyyy");
         public static string timeMT = DateTime.Now.ToString("HH:mm:ss");
         public static string timeUT = DateTime.Now.ToString("hh:mm:ss tt");
