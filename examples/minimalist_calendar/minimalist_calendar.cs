@@ -7,27 +7,27 @@ Evanslib.Print("What would you like?");
 string question = Evanslib.Input();
 
 if (question == "All") {
-    Evanslib.Print("Evanslib.dateTime");
+    Evanslib.Print(Evanslib.dateTime);
     Evanslib.Exit();
 }
 
 if (question == "Date") {
-    Evanslib.Print("Evanslib.date");
+    Evanslib.Print(Evanslib.date);
     Evanslib.Exit();
 }
 
 if (question == "Military time") {
-    Evanslib.Print("Evanslib.timeMT");
+    Evanslib.Print(Evanslib.timeMT);
     Evanslib.Exit();
 }
 
 if (question == "US time") {
-    Evanslib.Print("Evanslib.timeUT");
+    Evanslib.Print(Evanslib.timeUT);
     Evanslib.Exit();
 }
 
 if (question == "Month") {
-    Evanslib.Print("Evanslib.month");
+    Evanslib.Print(Evanslib.month);
     Evanslib.Exit();
 }
 
