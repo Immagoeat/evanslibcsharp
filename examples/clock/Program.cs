@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using evanslib;
 using System.Threading;
+using System.Reflection.Metadata;
 
 
 beginning:;
@@ -17,7 +18,8 @@ if (input == "1"){
 
     //Clears the console then prints the time before restarting to program
     Console.Clear();
-    Evanslib.Print(Evanslib.timeUT);
+    string signa = Evanslib.dateTime;
+    Evanslib.Print(signa);
     Thread.Sleep(2000);
     goto beginning;
 }

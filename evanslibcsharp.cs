@@ -6,6 +6,7 @@ using Microsoft.VisualBasic;
 using System.Security.Cryptography.X509Certificates;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 namespace evanslib{
 
@@ -15,7 +16,6 @@ namespace evanslib{
         public static string timeMT = DateTime.Now.ToString("HH:mm:ss");
         public static string timeUT = DateTime.Now.ToString("hh:mm:ss tt");
         public static string month = DateTime.Now.ToString("MMM");
-        public static string dateTime = DateTime.Now.ToString("MM/dd/yyyy" + " " + "HH:mm:ss");
 
 
         public static void Print<T>(T value){
@@ -42,6 +42,13 @@ namespace evanslib{
                 return "";
             }
             return input;
+        }
+
+        public static string dateTime(){
+            
+            Print(DateTime.Now.ToString("MM/dd/yyyy" + " " + "HH:mm:ss"));
+            return "";
+
         }
 
         public static Dictionary<string, string> Dict(){

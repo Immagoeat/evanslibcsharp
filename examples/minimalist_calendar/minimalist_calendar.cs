@@ -1,34 +1,45 @@
+using System.Diagnostics;
 using evanslib;
+
+top:;
 
 Evanslib.Print("What would you like?");
 
 //Repond with "Date", "Military time", "US time", or "All"
 
+
+
 string question = Evanslib.Input();
 
 if (question == "All") {
-    Evanslib.Print(Evanslib.dateTime);
-    Evanslib.Exit();
+    string bob = Evanslib.dateTime();
+    Evanslib.Print(bob);
+    //Evanslib.Exit();
+    goto top;
 }
 
 if (question == "Date") {
     Evanslib.Print(Evanslib.date);
     Evanslib.Exit();
+    goto top;
 }
 
 if (question == "Military time") {
     Evanslib.Print(Evanslib.timeMT);
     Evanslib.Exit();
+    goto top;
 }
 
 if (question == "US time") {
     Evanslib.Print(Evanslib.timeUT);
     Evanslib.Exit();
+    goto top;
 }
 
 if (question == "Month") {
     Evanslib.Print(Evanslib.month);
     Evanslib.Exit();
+    goto top;
 }
 
 else {
