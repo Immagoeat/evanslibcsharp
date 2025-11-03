@@ -12,11 +12,11 @@ namespace evanslib{
 
     public class Evanslib{
     
-        public static string date = DateTime.Now.ToString("MM/dd/yyyy");
-        public static string timeMT = DateTime.Now.ToString("HH:mm:ss");
-        public static string timeUT = DateTime.Now.ToString("hh:mm:ss tt");
-        public static string month = DateTime.Now.ToString("MMM");
-
+        public static string date(){return DateTime.Now.ToString("MM/dd/yyyy");}
+        public static string timeMT(){return DateTime.Now.ToString("HH:mm:ss");}
+        public static string timeUT(){return DateTime.Now.ToString("hh:mm:ss tt");}
+        public static string month(){return DateTime.Now.ToString("MMM");}
+        public static string dateTime(){return DateTime.Now.ToString("MM/dd/yyyy" + " " + "HH:mm:ss");}
 
         public static void Print<T>(T value){
             if (value is Dictionary<string, string> dict){
@@ -44,12 +44,6 @@ namespace evanslib{
             return input;
         }
 
-        public static string dateTime(){
-            
-            Print(DateTime.Now.ToString("MM/dd/yyyy" + " " + "HH:mm:ss"));
-            return "";
-
-        }
 
         public static Dictionary<string, string> Dict(){
             var evanslibdict = new Dictionary<string, string>();

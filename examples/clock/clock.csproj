@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Evanslib" Version="1.1.3" />
+    <Compile Include="../../evanslibcsharp.cs" />
   </ItemGroup>
 
 

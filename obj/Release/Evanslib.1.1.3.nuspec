@@ -7,7 +7,7 @@
     <readme>README.md</readme>
     <projectUrl>https://github.com/Immagoeat/evanslibcsharp</projectUrl>
     <description>A simple C# utility library</description>
-    <repository type="git" url="https://github.com/Immagoeat/evanslibcsharp" commit="336bea22fce2f6a23e821d6320958dee44b29291" />
+    <repository type="git" url="https://github.com/Immagoeat/evanslibcsharp" commit="b27428be9d3ac0a10b2cfe7e9fc4dcc9addedfb5" />
     <dependencies>
       <group targetFramework="net9.0" />
     </dependencies>

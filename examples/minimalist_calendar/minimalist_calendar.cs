@@ -14,30 +14,34 @@ string question = Evanslib.Input();
 if (question == "All") {
     string bob = Evanslib.dateTime();
     Evanslib.Print(bob);
-    //Evanslib.Exit();
+    Evanslib.Exit();
     goto top;
 }
 
 if (question == "Date") {
-    Evanslib.Print(Evanslib.date);
+    string bobb = Evanslib.date();
+    Evanslib.Print(bobb);
     Evanslib.Exit();
     goto top;
 }
 
 if (question == "Military time") {
-    Evanslib.Print(Evanslib.timeMT);
+    string bobbb = Evanslib.timeMT();
+    Evanslib.Print(bobbb);
     Evanslib.Exit();
     goto top;
 }
 
 if (question == "US time") {
-    Evanslib.Print(Evanslib.timeUT);
+    string bobbbb = Evanslib.timeUT();
+    Evanslib.Print(bobbbb);
     Evanslib.Exit();
     goto top;
 }
 
 if (question == "Month") {
-    Evanslib.Print(Evanslib.month);
+    string bobbbbb = Evanslib.month();
+    Evanslib.Print(bobbbbb);
     Evanslib.Exit();
     goto top;
 }

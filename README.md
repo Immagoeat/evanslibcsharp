@@ -4,8 +4,11 @@ The github will be more updated than the NuGet page, may be unstable or crash
 
 # Versions
 
+## 1.1.4
+Latest version, changes how times work, now more optimised
+
 ## 1.1.2
-The latest version, time and date functions now work differently (go to the "Time" section), and the name of the dictionary ammending changes slightly so it fits with the pattern of all other naming
+Time and date functions now work differently (go to the "Time" section), and the name of the dictionary ammending changes slightly so it fits with the pattern of all other naming
 
 ## 1.1.1
 In Evanslib version 1.1.1, error numbers are integers and no longer strings
@@ -34,27 +37,32 @@ Here are some functions for calling time (you can only print for now)
 ### Current Date
 This function displays the current date (by the system) in the terminal
 
-    Print("Evanslib.date")
+    var VARNAME = Evanslib.date();
+    Evanslib.Print(VARNAME);
 
 ### Current Time (Military time [24 hour time])
 Displays the 24 hr time in terminal
 
-    Print("Evanslib.timeMT")
+    var VARNAME = Evanslib.timeMT();
+    Evanslib.Print(VARNAME);
 
 ### Current Time (12 hour time)
 Displays the 12 hr time in terminal
 
-    Print("Evanslib.timeUT")
+    var VARNAME = Evanslib.timeUT();
+    Evanslib.Print(VARNAME);
 
 ### Current Month
 Displays the 3 letter code for the month
 
-    Print("Evanslib.month")
+    var VARNAME = Evanslib.month();
+    Evanslib.Print(VARNAME);
 
 ### Current Date and Time
 Displays the 12 hr time and date in terminal
 
-    Print("Evanslib.dateTime")
+    var VARNAME = Evanslib.dateTime();
+    Evanslib.Print(VARNAME);
 
 ## Dictionary functions
 The Evanslib dictionary is easy to learn, in contrast to c#'s and its quick and easy
