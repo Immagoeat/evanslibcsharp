@@ -12,7 +12,7 @@ string option = Evanslib.Input();
 
 //Only respond with 'Sign up' or 'Log in'. Anything else will be an error (see line 33)
 
-if (option == "Sign up"){
+if (option == "Sign up" || option == "sign up"){
     //Get username and password
     Evanslib.Print("Username: ");
     string newusername = Evanslib.Input();
@@ -23,7 +23,7 @@ if (option == "Sign up"){
     goto begining;
 }
 
-if (option == "Log in"){
+if (option == "Log in" || option == "log in"){
     //Get the details of their account
     Evanslib.Print("Username: ");
     string attemptusername = Evanslib.Input();
@@ -33,6 +33,11 @@ if (option == "Log in"){
     foreach (KeyValuePair<string, string> gyatt in users){
         if (attemptusername == gyatt.Key && attemptpassword == gyatt.Value){
             Evanslib.Print("Hello");
+        }
+
+        else
+        {
+            Evanslib.Print("Nah man");
         }
     }
 

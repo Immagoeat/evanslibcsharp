@@ -3,14 +3,11 @@
 /home/evan/Desktop/evanslibcsharp/examples/clock/bin/Debug/net9.0/clock.runtimeconfig.json
 /home/evan/Desktop/evanslibcsharp/examples/clock/bin/Debug/net9.0/clock.dll
 /home/evan/Desktop/evanslibcsharp/examples/clock/bin/Debug/net9.0/clock.pdb
-/home/evan/Desktop/evanslibcsharp/examples/clock/bin/Debug/net9.0/evanslibcsharp.dll
-/home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.csproj.AssemblyReference.cache
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.GeneratedMSBuildEditorConfig.editorconfig
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.AssemblyInfoInputs.cache
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.AssemblyInfo.cs
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.csproj.CoreCompileInputs.cache
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.sourcelink.json
-/home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.csproj.Up2Date
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.dll
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/refint/clock.dll
 /home/evan/Desktop/evanslibcsharp/examples/clock/obj/Debug/net9.0/clock.pdb
