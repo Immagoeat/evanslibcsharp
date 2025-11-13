@@ -73,4 +73,25 @@ namespace evanslib{
 
     }
 
+    class Evansmath{
+    public static double Add(double first, double second){
+        double ans = first + second;
+        return ans;
+    }
+    
+    public static double Subtract(double first, double second){
+        double ans = first - second;
+        return ans;
+    }
+    
+    public static double Multiply(double first, double second){
+        double ans = first * second;
+        return ans;
+    }
+    
+    public static double Divide(double first, double second){
+        double ans = first / second;
+        return ans;
+    }
+
 }
