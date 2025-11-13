@@ -4,6 +4,9 @@ The github will be more updated than the NuGet page, may be unstable or crash
 
 # Versions
 
+## 1.2.0
+Newest version, added "Evansmath" which is in the [Math](Math) section and can be found later in README
+
 ## 1.1.4
 Latest version, changes how times work, now more optimised
 
@@ -76,6 +79,29 @@ To create a dictionary, call
 To add a name and value to the dictionary, call
 
     Evanslib.modifyDict(DICTIONARYNAME, "NAME", "VALUE"); (Creates an entry in the dictionary with a name and value, outputs "NAME: VALUE")
+
+## Math
+Evansmath is an easy and basic math system. This will be updated more later on but it's a good place to start
+
+### Adding
+To add, you would
+
+    Evansmath.Add(NUM1, NUM2);
+
+### Subtracting
+To subtract
+
+    Evansmath.Subtract(NUM1, NUM2);
+
+### Multiplying
+To multiply, 
+
+    Evansmath.Multply(NUM1, NUM2);
+
+### Dividing
+Finally, to divide
+
+    Evansmath.Divide(NUM1, NUM2);
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
