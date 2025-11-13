@@ -5,7 +5,7 @@ The github will be more updated than the NuGet page, may be unstable or crash
 # Versions
 
 ## 1.2.0
-Newest version, added "Evansmath" which is in the [Math](Math) section and can be found later in README
+Newest version, added "Evansmath" which is in the [Math](README.md#math) section and can be found later in README
 
 ## 1.1.4
 Latest version, changes how times work, now more optimised
