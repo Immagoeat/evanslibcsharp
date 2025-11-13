@@ -26,7 +26,7 @@ namespace evanslib{
             }
 
             
-            else{
+            else {
                 Console.WriteLine(value);
             }
         }
@@ -59,6 +59,7 @@ namespace evanslib{
             Console.WriteLine("ERROR " + number + ": " + crashreason);
             Console.ForegroundColor = ConsoleColor.White;
         }
+        
         public static void exitError(string crashreason, int number){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("ERROR " + number + ": " + crashreason);
@@ -74,6 +75,7 @@ namespace evanslib{
     }
 
     class Evansmath{
+        
     public static double Add(double first, double second){
         double ans = first + second;
         return ans;
