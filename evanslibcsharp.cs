@@ -96,5 +96,11 @@ namespace evanslib{
         return ans;
     }
 
+    public static double FindX(double addvalue, double equalto)
+        {
+            double ans = equalto - addvalue;
+            return ans;
+        }
+
 }
 }
