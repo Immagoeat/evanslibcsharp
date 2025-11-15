@@ -74,7 +74,7 @@ namespace evanslib{
 
     }
 
-    class Evansmath{
+    public class Evansmath{
         
     public static double Add(double first, double second){
         double ans = first + second;
@@ -96,4 +96,5 @@ namespace evanslib{
         return ans;
     }
 
+}
 }
