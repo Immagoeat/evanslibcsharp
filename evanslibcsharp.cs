@@ -101,5 +101,56 @@ namespace evanslib{
             double ans = equals - addvalue;
             return ans;
         }
+
+    public static string FindMultiX(string equasion)
+        {
+            //Initial split
+            string[] equasionsplit = equasion.Split('=');
+            string firsthalf = equasionsplit[0];
+            string secondhalf = equasionsplit[1];
+
+            //Split into chars
+            string[] splitfirsthalf = firsthalf.Split('+', '-', '*', '/');
+            string[] splitsecondhalf = secondhalf.Split('+', '-', '*', '/');
+            string one = splitfirsthalf[0];
+            string two = splitfirsthalf[1];
+            string three = splitsecondhalf[0];
+            string four = splitsecondhalf[1];
+
+            //Replace 'x' to not get issues
+            one = one.Replace("x", "");
+            three = three.Replace("x", "");
+
+            //Try-catch to make sure that no errors
+            try
+            {
+                double test1 = double.Parse(one);
+                double test2 = double.Parse(two);
+                double test3 = double.Parse(three);
+                double test4 = double.Parse(four);
+            }
+
+            catch
+            {
+                Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
+            }
+
+            //Parse
+            double ax = double.Parse(one);
+            double b = double.Parse(two);
+            double cx = double.Parse(three);
+            double d = double.Parse(four);
+
+            //Setup equasion
+            double anspt1 = b - d;
+            double anspt2 = ax - cx;
+            double ans = anspt2 / anspt1;
+
+            //Coonvert equasion to string
+            string answer = ans.ToString();
+
+            return answer;
+
+        }
 }
 }
