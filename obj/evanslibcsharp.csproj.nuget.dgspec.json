@@ -5,7 +5,7 @@
   },
   "projects": {
     "/home/evan/Desktop/evanslibcsharp/evanslibcsharp.csproj": {
-      "version": "1.2.0",
+      "version": "1.2.1-pre",
       "restore": {
         "projectUniqueName": "/home/evan/Desktop/evanslibcsharp/evanslibcsharp.csproj",
         "projectName": "Evanslib",

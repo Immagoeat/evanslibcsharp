@@ -103,6 +103,9 @@ Finally, to divide
 
     Evansmath.Divide(NUM1, NUM2);
 
+### FindX
+You can now find the value of 'x'
+
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
 
