@@ -96,8 +96,14 @@ namespace evanslib{
         return ans;
     }
 
-    public static double FindX(double addvalue, double equals)
+    public static string FindX(string equasion)
         {
+            string[] split = equsion.Split('=');
+            string firsthalf = split[0];
+            string secondhalf = split[1];
+
+            string[] firsthalfsplit
+        
             double ans = equals - addvalue;
             return ans;
         }
