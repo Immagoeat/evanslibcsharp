@@ -102,7 +102,11 @@ namespace evanslib{
             string firsthalf = split[0];
             string secondhalf = split[1];
 
-            string[] firsthalfsplit
+            string[] firsthalfsplit = firsthalf.Split(' ');
+            string xvalue = firsthalfsplit[0];
+            xvalue = xvalue.Replace("x", "");
+            string whattodo = firsthalfsplit[1];
+            string equalsvalue = secondhalf;
         
             double ans = equals - addvalue;
             return ans;
