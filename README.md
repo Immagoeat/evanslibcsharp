@@ -106,6 +106,10 @@ Finally, to divide
 ### FindX
 You can now find the value of 'x'
 
+    Evansmath.FindX(ADD, EQUALS);
+
+In this case, the equasion is x + ADD = EQUALS. You can do a negative number, but multiplication and division aren't working yet.
+
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
 
