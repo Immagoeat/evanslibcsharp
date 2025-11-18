@@ -110,12 +110,23 @@ namespace evanslib{
             string equalsvalue = secondhalf;
 
             try{
-                double x = double.Parse(xvalue);
-                double addvalue = double.Parse(othreitem);
-                double equals = double.Parse(equalsvalue);
+                double test1 = double.Parse(xvalue);
+                double test2 = double.Parse(othreitem);
+                double test3 = double.Parse(equalsvalue);
             }
+
+            catch{
+                Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
+            }
+
+            double x = double.Parse(xvalue);
+            double addvalue = double.Parse(othreitem);
+            double equals = double.Parse(equalsvalue);
+
+            double pt1 = equals - addvalue
+            
         
-            double ans = equals - addvalue;
+            double ans = pt1 / x;
             return ans;
         }
 
