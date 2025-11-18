@@ -106,7 +106,14 @@ namespace evanslib{
             string xvalue = firsthalfsplit[0];
             xvalue = xvalue.Replace("x", "");
             string whattodo = firsthalfsplit[1];
+            string otheritem = firsthalfsplit[2];
             string equalsvalue = secondhalf;
+
+            try{
+                double x = double.Parse(xvalue);
+                double addvalue = double.Parse(othreitem);
+                double equals = double.Parse(equalsvalue);
+            }
         
             double ans = equals - addvalue;
             return ans;
