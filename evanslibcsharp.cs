@@ -98,7 +98,7 @@ namespace evanslib{
 
     public static string FindX(string equasion)
         {
-            string[] split = equsion.Split('=');
+            string[] split = equasion.Split('=');
             string firsthalf = split[0];
             string secondhalf = split[1];
 
@@ -111,7 +111,7 @@ namespace evanslib{
 
             try{
                 double test1 = double.Parse(xvalue);
-                double test2 = double.Parse(othreitem);
+                double test2 = double.Parse(otheritem);
                 double test3 = double.Parse(equalsvalue);
             }
 
@@ -120,14 +120,43 @@ namespace evanslib{
             }
 
             double x = double.Parse(xvalue);
-            double addvalue = double.Parse(othreitem);
+            double addvalue = double.Parse(otheritem);
             double equals = double.Parse(equalsvalue);
 
-            double pt1 = equals - addvalue
+            if (whattodo == "+")
+            {
+                double pt1 = equals - addvalue;
+                double ans = pt1 / x;
+                return ans.ToString();
+            }
+
+            if (whattodo == "-")
+            {
+                double pt1 = equals + addvalue;
+                double ans = pt1 / x;
+                return ans.ToString();
+            }
+
+            if (whattodo == "/")
+            {
+                double pt1 = equals * addvalue;
+                double ans = pt1 / x;
+                return ans.ToString();
+            }
+
+            if (whattodo == "*")
+            {
+                double pt1 = equals / addvalue;
+                double ans = pt1 / x;
+                return ans.ToString();
+            }
+
+            else
+            {
+                return "Error";
+            }
+
             
-        
-            double ans = pt1 / x;
-            return ans;
         }
 
     public static string FindMultiX(string equasion)
@@ -324,10 +353,10 @@ namespace evanslib{
 
             return "Error: you done messed up";
         }
-<<<<<<< HEAD
+
     }
 }
-=======
-}
-}
->>>>>>> dae10817c2c28b6e139e339bd40a8443fc2ae886
+
+
+
+
