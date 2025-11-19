@@ -178,15 +178,18 @@ namespace evanslib{
             string two = splitfirsthalf[1];
             string three = splitsecondhalf[0];
             string four = splitsecondhalf[1];
-
-            if (one == "x")
+            
+            
+            if (one == " x ")
             {
-                one = one.Replace("x", "1");
+                one = one.Replace(" x ", "1");
+                return one;
             }
 
-            else if (three == "x")
+            if (three == " x ")
             {
-                three = three.Replace("x", "1");
+                three = three.Replace(" x ", "1");
+                return three;
             }
 
             else{

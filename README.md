@@ -5,11 +5,14 @@ Next version is being worked on and will include 'FindX' and 'FindMultiX' functi
 
 # Versions
 
+## 1.3.1
+Added FindX and FindMultiX functions, check [Math](README.md#math) for more info
+
 ## 1.2.0
-Newest version, added "Evansmath" which is in the [Math](README.md#math) section and can be found later in README
+Added "Evansmath" which is in the [Math](README.md#math) section and can be found later in README
 
 ## 1.1.4
-Latest version, changes how times work, now more optimised
+Changes how times work, now more optimised
 
 ## 1.1.2
 Time and date functions now work differently (go to the "Time" section), and the name of the dictionary ammending changes slightly so it fits with the pattern of all other naming
