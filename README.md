@@ -105,11 +105,14 @@ Finally, to divide
     Evansmath.Divide(NUM1, NUM2);
 
 ### FindX
-You can now find the value of 'x'
+You can now find the value of 'x'. You can add, subtract, multiply, or divide.
 
-    Evansmath.FindX(ADD, EQUALS);
+    Evansmath.FindX("x + 12 = 14");
 
-In this case, the equasion is x + ADD = EQUALS. You can do a negative number, but multiplication and division aren't working yet.
+### FindMultiX
+You can solve a problem like ax + b = cx + d, but any kind of sign works.
+
+    Evansmath.FindMultiX("2x + 3 = 8x - 11");
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib

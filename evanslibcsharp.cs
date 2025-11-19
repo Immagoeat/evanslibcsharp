@@ -218,19 +218,46 @@ namespace evanslib{
             double d = double.Parse(four);
 
             if (firstaction == "+"){
-                //Setup equasion
-                double anspt1 = b - d;
-                double anspt2 = ax - cx;
-                double ans = anspt2 / anspt1;
+                if (secondaction == "-"){
 
-                //Coonvert equasion to string
-                string answer = ans.ToString();
+                    double pt1 = ax - cx;
+                    double pt2 = b + d;
+                    double ans = pt2 / -pt1;
+                    string answer = ans.ToString();
+                    return answer;
 
-                return answer;
+                }
 
+                else if (secondaction == "+"){
+                    
+                    double pt1 = ax - cx;
+                    double pt2 = b - d;
+                    double ans = pt2 / -pt1;
+                    string answer = ans.ToString();
+                    return answer;
+                }
+
+
+                else if (secondaction == "*"){
+                    double pt1 = cx * d;
+                    
+                    double pt1pt2 = pt1 - ax;
+                    
+                    double ans = -b / pt1pt2;
+                    
+                    string answer = ans.ToString();
+                    return answer;
+                }
+
+                else if (secondaction == "/"){
+                    double pt1 = cx / d;
+                    double pt1pt2 = ax - pt1;
+                    double ans = b / -pt1pt2;
+                    string answer = ans.ToString();
+                    return answer;
+                }
             }
 
-//CURRENTLY HERE
 
             if (firstaction == "-"){
                 if (secondaction == "-"){
@@ -265,7 +292,9 @@ namespace evanslib{
                 }
 
                 else if (secondaction == "/"){
-                    double ans = b / (ax - (cx / d));
+                    double pt1 = cx / d;
+                    double pt1pt2 = ax - pt1;
+                    double ans = b / pt1pt2;
                     string answer = ans.ToString();
                     return answer;
                 }
@@ -356,7 +385,3 @@ namespace evanslib{
 
     }
 }
-
-
-
-
