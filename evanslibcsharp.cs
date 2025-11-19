@@ -104,10 +104,16 @@ namespace evanslib{
 
             string[] firsthalfsplit = firsthalf.Split(' ');
             string xvalue = firsthalfsplit[0];
-            xvalue = xvalue.Replace("x", "");
             string whattodo = firsthalfsplit[1];
             string otheritem = firsthalfsplit[2];
             string equalsvalue = secondhalf;
+
+            if (xvalue == "x")
+            {
+                xvalue = xvalue.Replace("x", "1");
+            }
+
+            xvalue = xvalue.Replace("x", "");
 
             try{
                 double test1 = double.Parse(xvalue);
@@ -118,6 +124,7 @@ namespace evanslib{
             catch{
                 Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
             }
+
 
             double x = double.Parse(xvalue);
             double addvalue = double.Parse(otheritem);
@@ -130,21 +137,21 @@ namespace evanslib{
                 return ans.ToString();
             }
 
-            if (whattodo == "-")
+            else if (whattodo == "-")
             {
                 double pt1 = equals + addvalue;
                 double ans = pt1 / x;
                 return ans.ToString();
             }
 
-            if (whattodo == "/")
+            else if (whattodo == "/")
             {
                 double pt1 = equals * addvalue;
                 double ans = pt1 / x;
                 return ans.ToString();
             }
 
-            if (whattodo == "*")
+            else if (whattodo == "*")
             {
                 double pt1 = equals / addvalue;
                 double ans = pt1 / x;

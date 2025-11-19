@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "evanslibcsharp/1.3.1": {
+      "evanslibcsharp/1.3.2": {
         "runtime": {
           "evanslibcsharp.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "evanslibcsharp/1.3.1": {
+    "evanslibcsharp/1.3.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
