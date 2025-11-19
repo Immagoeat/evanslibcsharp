@@ -96,9 +96,37 @@ namespace evanslib{
         return ans;
     }
 
-    public static double FindX(double addvalue, double equals)
+    public static string FindX(string equasion)
         {
-            double ans = equals - addvalue;
+            string[] split = equsion.Split('=');
+            string firsthalf = split[0];
+            string secondhalf = split[1];
+
+            string[] firsthalfsplit = firsthalf.Split(' ');
+            string xvalue = firsthalfsplit[0];
+            xvalue = xvalue.Replace("x", "");
+            string whattodo = firsthalfsplit[1];
+            string otheritem = firsthalfsplit[2];
+            string equalsvalue = secondhalf;
+
+            try{
+                double test1 = double.Parse(xvalue);
+                double test2 = double.Parse(othreitem);
+                double test3 = double.Parse(equalsvalue);
+            }
+
+            catch{
+                Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
+            }
+
+            double x = double.Parse(xvalue);
+            double addvalue = double.Parse(othreitem);
+            double equals = double.Parse(equalsvalue);
+
+            double pt1 = equals - addvalue
+            
+        
+            double ans = pt1 / x;
             return ans;
         }
 
@@ -296,5 +324,10 @@ namespace evanslib{
 
             return "Error: you done messed up";
         }
+<<<<<<< HEAD
     }
 }
+=======
+}
+}
+>>>>>>> dae10817c2c28b6e139e339bd40a8443fc2ae886

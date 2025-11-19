@@ -1,6 +1,7 @@
 # Evan's Library to C#
 Evanslib for C# is a great, more user-friendly way to code in C#
-The github will be more updated than the NuGet page, may be unstable or crash
+The github will be more updated than the NuGet page, may be unstable or crash.
+Next version is being worked on and will include 'FindX' and 'FindMultiX' functions. These can find a missing value in an equasion. FindX is in the 1.2.1-pre and FindMultiX still doesn't work.
 
 # Versions
 
@@ -105,6 +106,10 @@ Finally, to divide
 
 ### FindX
 You can now find the value of 'x'
+
+    Evansmath.FindX(ADD, EQUALS);
+
+In this case, the equasion is x + ADD = EQUALS. You can do a negative number, but multiplication and division aren't working yet.
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
