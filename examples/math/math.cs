@@ -6,7 +6,7 @@ class Program
 
     public static void Main(string[] args)
     {
-        var bob = Evansmath.FindMultiX("2x + 3 = 1x - 2");
+        var bob = Evansmath.FindMultiX("2x - 4 = 3x / 6");
         Evanslib.Print(bob);
     }    
 

@@ -108,18 +108,37 @@ namespace evanslib{
             string[] equasionsplit = equasion.Split('=');
             string firsthalf = equasionsplit[0];
             string secondhalf = equasionsplit[1];
+            string[] first = firsthalf.Split(' ');
+            string[] second = secondhalf.Split(' ');
+            string firstaction = first[1];
+            string secondaction = second[2];
 
             //Split into chars
             string[] splitfirsthalf = firsthalf.Split('+', '-', '*', '/');
             string[] splitsecondhalf = secondhalf.Split('+', '-', '*', '/');
+            
             string one = splitfirsthalf[0];
             string two = splitfirsthalf[1];
             string three = splitsecondhalf[0];
             string four = splitsecondhalf[1];
 
+            if (one == "x")
+            {
+                one = one.Replace("x", "1");
+            }
+
+            else if (three == "x")
+            {
+                three = three.Replace("x", "1");
+            }
+
+            else{
+
             //Replace 'x' to not get issues
             one = one.Replace("x", "");
             three = three.Replace("x", "");
+
+            }
 
             //Try-catch to make sure that no errors
             try
@@ -141,16 +160,141 @@ namespace evanslib{
             double cx = double.Parse(three);
             double d = double.Parse(four);
 
-            //Setup equasion
-            double anspt1 = b - d;
-            double anspt2 = ax - cx;
-            double ans = anspt2 / anspt1;
+            if (firstaction == "+"){
+                //Setup equasion
+                double anspt1 = b - d;
+                double anspt2 = ax - cx;
+                double ans = anspt2 / anspt1;
 
-            //Coonvert equasion to string
-            string answer = ans.ToString();
+                //Coonvert equasion to string
+                string answer = ans.ToString();
 
-            return answer;
+                return answer;
 
+            }
+
+//CURRENTLY HERE
+
+            if (firstaction == "-"){
+                if (secondaction == "-"){
+
+                    double pt1 = ax - cx;
+                    double pt2 = b - d;
+                    double ans = pt2 / pt1;
+                    string answer = ans.ToString();
+                    return answer;
+
+                }
+
+                else if (secondaction == "+"){
+                    
+                    double pt1 = ax - cx;
+                    double pt2 = b + d;
+                    double ans = pt2 / pt1;
+                    string answer = ans.ToString();
+                    return answer;
+                }
+
+
+                else if (secondaction == "*"){
+                    double pt1 = cx * d;
+                    
+                    double pt1pt2 = pt1 - ax;
+                    
+                    double ans = -b / pt1pt2;
+                    
+                    string answer = ans.ToString();
+                    return answer;
+                }
+
+                else if (secondaction == "/"){
+                    double ans = b / (ax - (cx / d));
+                    string answer = ans.ToString();
+                    return answer;
+                }
+            }
+
+            if (firstaction == "*"){
+                if (secondaction == "-"){
+
+                    double pt1 = ax * b;
+                    double pt1pt2 = pt1 - cx;
+                    double ans = -d / pt1pt2;
+                    string answer = ans.ToString();
+                    return answer;
+
+                }
+
+                else if (secondaction == "+"){
+                    
+                    double pt1 = ax * b;
+                    double pt1pt2 = pt1 - cx;
+                    double ans = d / pt1pt2;
+                    string answer = ans.ToString();
+                    return answer;
+                }
+
+
+                else if (secondaction == "*"){
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Environment.Exit(0);
+                }
+
+                else if (secondaction == "/"){
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Environment.Exit(0);
+                }
+
+            }
+
+            if (firstaction == "/"){
+                if (secondaction == "-"){
+
+                    //Setup equasion
+                    double anspt1 = -d * b;
+                    double anspt2 = ax - cx;
+                    double ans = anspt1 / anspt2;
+
+                    //Coonvert equasion to string
+                    string answer = ans.ToString();
+                    return answer;
+
+                }
+
+            else if (secondaction == "+"){
+                //Setup equasion
+                double anspt1 = d - b;
+                double anspt2 = ax - cx;
+                double ans = anspt1 / anspt2;
+
+                //Convert equasion to string
+                string answer = ans.ToString();
+                return answer;
+            }
+
+
+            else if (secondaction == "*"){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                Console.ForegroundColor = ConsoleColor.White;
+                Environment.Exit(0);
+            }
+
+            else if (secondaction == "/"){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                Console.ForegroundColor = ConsoleColor.White;
+                Environment.Exit(0);
+            }
+
+            
+            }
+
+            return "Error: you done messed up";
         }
-}
+    }
 }
