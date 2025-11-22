@@ -1,4 +1,12 @@
 bin/
 obj/
 .vscode/
+examples/clock/obj
+examples/clock/bin
+examples/login_sys/obj
+examples/login_sys/bin
+examples/math/obj
+examples/math/bin
+examples/minimalist_calendar/obj
+examples/minimalist_calendar/bin
 *.log
