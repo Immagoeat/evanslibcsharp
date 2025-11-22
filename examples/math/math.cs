@@ -6,7 +6,7 @@ class Program
 
     public static void Main(string[] args)
     {
-        var bob = Evansmath.FindX("x + 3 = 2");
+        var bob = Evansmath.PercentOf("12% of 99");
         Evanslib.Print(bob);
     }    
 

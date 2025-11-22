@@ -393,5 +393,31 @@ namespace evanslib{
             return "Error: you done messed up";
         }
 
+        public static string PercentOf(string equasion)
+        {
+            //8% of 12
+            string[] splitequasion = equasion.Split("of");
+            string percent = splitequasion[0];
+            string totalvalue = splitequasion[1];
+            
+
+            percent = percent.Replace("%", "");
+
+            try
+            {
+                double test1 = double.Parse(percent);
+                double test2 = double.Parse(totalvalue);
+            }
+
+            catch
+            {
+                Evanslib.exitError("Equasion is inputted wrong", 2);
+            }
+
+            double part1 = double.Parse(percent);
+            double part2 = double.Parse(totalvalue);
+            return (part1 / part2 * 100).ToString();
+        }
+
     }
 }
