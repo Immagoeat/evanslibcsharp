@@ -76,347 +76,347 @@ namespace evanslib{
 
     public class Evansmath{
         
-    public static double Add(double first, double second){
-        double ans = first + second;
-        return ans;
-    }
-    
-    public static double Subtract(double first, double second){
-        double ans = first - second;
-        return ans;
-    }
-    
-    public static double Multiply(double first, double second){
-        double ans = first * second;
-        return ans;
-    }
-    
-    public static double Divide(double first, double second){
-        double ans = first / second;
-        return ans;
-    }
-
-    public static string FindX(string equasion)
-        {
-            string[] split = equasion.Split('=');
-            string firsthalf = split[0];
-            string secondhalf = split[1];
-
-            string[] firsthalfsplit = firsthalf.Split(' ');
-            string xvalue = firsthalfsplit[0];
-            string whattodo = firsthalfsplit[1];
-            string otheritem = firsthalfsplit[2];
-            string equalsvalue = secondhalf;
-
-            if (xvalue == "x")
-            {
-                xvalue = xvalue.Replace("x", "1");
-            }
-
-            xvalue = xvalue.Replace("x", "");
-
-            try{
-                double test1 = double.Parse(xvalue);
-                double test2 = double.Parse(otheritem);
-                double test3 = double.Parse(equalsvalue);
-            }
-
-            catch{
-                Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
-            }
-
-
-            double x = double.Parse(xvalue);
-            double addvalue = double.Parse(otheritem);
-            double equals = double.Parse(equalsvalue);
-
-            if (whattodo == "+")
-            {
-                double pt1 = equals - addvalue;
-                double ans = pt1 / x;
-                return ans.ToString();
-            }
-
-            else if (whattodo == "-")
-            {
-                double pt1 = equals + addvalue;
-                double ans = pt1 / x;
-                return ans.ToString();
-            }
-
-            else if (whattodo == "/")
-            {
-                double pt1 = equals * addvalue;
-                double ans = pt1 / x;
-                return ans.ToString();
-            }
-
-            else if (whattodo == "*")
-            {
-                double pt1 = equals / addvalue;
-                double ans = pt1 / x;
-                return ans.ToString();
-            }
-
-            else
-            {
-                return "Error";
-            }
-
-            
+        public static double Add(double first, double second){
+            double ans = first + second;
+            return ans;
+        }
+        
+        public static double Subtract(double first, double second){
+            double ans = first - second;
+            return ans;
+        }
+        
+        public static double Multiply(double first, double second){
+            double ans = first * second;
+            return ans;
+        }
+        
+        public static double Divide(double first, double second){
+            double ans = first / second;
+            return ans;
         }
 
-    public static string FindMultiX(string equasion)
-        {
-            //Initial split
-            string[] equasionsplit = equasion.Split('=');
-            string firsthalf = equasionsplit[0];
-            string secondhalf = equasionsplit[1];
-            string[] first = firsthalf.Split(' ');
-            string[] second = secondhalf.Split(' ');
-            string firstaction = first[1];
-            string secondaction = second[2];
-
-            //Split into chars
-            string[] splitfirsthalf = firsthalf.Split('+', '-', '*', '/');
-            string[] splitsecondhalf = secondhalf.Split('+', '-', '*', '/');
-            
-            string one = splitfirsthalf[0];
-            string two = splitfirsthalf[1];
-            string three = splitsecondhalf[0];
-            string four = splitsecondhalf[1];
-            
-            
-            if (one == " x ")
+        public static string FindX(string equasion)
             {
-                one = one.Replace(" x ", "1");
-                return one;
+                string[] split = equasion.Split('=');
+                string firsthalf = split[0];
+                string secondhalf = split[1];
+
+                string[] firsthalfsplit = firsthalf.Split(' ');
+                string xvalue = firsthalfsplit[0];
+                string whattodo = firsthalfsplit[1];
+                string otheritem = firsthalfsplit[2];
+                string equalsvalue = secondhalf;
+
+                if (xvalue == "x")
+                {
+                    xvalue = xvalue.Replace("x", "1");
+                }
+
+                xvalue = xvalue.Replace("x", "");
+
+                try{
+                    double test1 = double.Parse(xvalue);
+                    double test2 = double.Parse(otheritem);
+                    double test3 = double.Parse(equalsvalue);
+                }
+
+                catch{
+                    Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
+                }
+
+
+                double x = double.Parse(xvalue);
+                double addvalue = double.Parse(otheritem);
+                double equals = double.Parse(equalsvalue);
+
+                if (whattodo == "+")
+                {
+                    double pt1 = equals - addvalue;
+                    double ans = pt1 / x;
+                    return ans.ToString();
+                }
+
+                else if (whattodo == "-")
+                {
+                    double pt1 = equals + addvalue;
+                    double ans = pt1 / x;
+                    return ans.ToString();
+                }
+
+                else if (whattodo == "/")
+                {
+                    double pt1 = equals * addvalue;
+                    double ans = pt1 / x;
+                    return ans.ToString();
+                }
+
+                else if (whattodo == "*")
+                {
+                    double pt1 = equals / addvalue;
+                    double ans = pt1 / x;
+                    return ans.ToString();
+                }
+
+                else
+                {
+                    return "Error";
+                }
+
+                
             }
 
-            if (three == " x ")
+        public static string FindMultiX(string equasion)
             {
-                three = three.Replace(" x ", "1");
-                return three;
-            }
+                //Initial split
+                string[] equasionsplit = equasion.Split('=');
+                string firsthalf = equasionsplit[0];
+                string secondhalf = equasionsplit[1];
+                string[] first = firsthalf.Split(' ');
+                string[] second = secondhalf.Split(' ');
+                string firstaction = first[1];
+                string secondaction = second[2];
 
-            else{
+                //Split into chars
+                string[] splitfirsthalf = firsthalf.Split('+', '-', '*', '/');
+                string[] splitsecondhalf = secondhalf.Split('+', '-', '*', '/');
+                
+                string one = splitfirsthalf[0];
+                string two = splitfirsthalf[1];
+                string three = splitsecondhalf[0];
+                string four = splitsecondhalf[1];
+                
+                
+                if (one == " x ")
+                {
+                    one = one.Replace(" x ", "1");
+                    return one;
+                }
 
-            //Replace 'x' to not get issues
-            one = one.Replace("x", "");
-            three = three.Replace("x", "");
+                if (three == " x ")
+                {
+                    three = three.Replace(" x ", "1");
+                    return three;
+                }
 
-            }
+                else{
 
-            //Try-catch to make sure that no errors
-            try
-            {
-                double test1 = double.Parse(one);
-                double test2 = double.Parse(two);
-                double test3 = double.Parse(three);
-                double test4 = double.Parse(four);
-            }
-
-            catch
-            {
-                Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
-            }
-
-            //Parse
-            double ax = double.Parse(one);
-            double b = double.Parse(two);
-            double cx = double.Parse(three);
-            double d = double.Parse(four);
-
-            if (firstaction == "+"){
-                if (secondaction == "-"){
-
-                    double pt1 = ax - cx;
-                    double pt2 = b + d;
-                    double ans = pt2 / -pt1;
-                    string answer = ans.ToString();
-                    return answer;
+                //Replace 'x' to not get issues
+                one = one.Replace("x", "");
+                three = three.Replace("x", "");
 
                 }
+
+                //Try-catch to make sure that no errors
+                try
+                {
+                    double test1 = double.Parse(one);
+                    double test2 = double.Parse(two);
+                    double test3 = double.Parse(three);
+                    double test4 = double.Parse(four);
+                }
+
+                catch
+                {
+                    Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
+                }
+
+                //Parse
+                double ax = double.Parse(one);
+                double b = double.Parse(two);
+                double cx = double.Parse(three);
+                double d = double.Parse(four);
+
+                if (firstaction == "+"){
+                    if (secondaction == "-"){
+
+                        double pt1 = ax - cx;
+                        double pt2 = b + d;
+                        double ans = pt2 / -pt1;
+                        string answer = ans.ToString();
+                        return answer;
+
+                    }
+
+                    else if (secondaction == "+"){
+                        
+                        double pt1 = ax - cx;
+                        double pt2 = b - d;
+                        double ans = pt2 / -pt1;
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+
+
+                    else if (secondaction == "*"){
+                        double pt1 = cx * d;
+                        
+                        double pt1pt2 = pt1 - ax;
+                        
+                        double ans = -b / pt1pt2;
+                        
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+
+                    else if (secondaction == "/"){
+                        double pt1 = cx / d;
+                        double pt1pt2 = ax - pt1;
+                        double ans = b / -pt1pt2;
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+                }
+
+
+                if (firstaction == "-"){
+                    if (secondaction == "-"){
+
+                        double pt1 = ax - cx;
+                        double pt2 = b - d;
+                        double ans = pt2 / pt1;
+                        string answer = ans.ToString();
+                        return answer;
+
+                    }
+
+                    else if (secondaction == "+"){
+                        
+                        double pt1 = ax - cx;
+                        double pt2 = b + d;
+                        double ans = pt2 / pt1;
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+
+
+                    else if (secondaction == "*"){
+                        double pt1 = cx * d;
+                        
+                        double pt1pt2 = pt1 - ax;
+                        
+                        double ans = -b / pt1pt2;
+                        
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+
+                    else if (secondaction == "/"){
+                        double pt1 = cx / d;
+                        double pt1pt2 = ax - pt1;
+                        double ans = b / pt1pt2;
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+                }
+
+                if (firstaction == "*"){
+                    if (secondaction == "-"){
+
+                        double pt1 = ax * b;
+                        double pt1pt2 = pt1 - cx;
+                        double ans = -d / pt1pt2;
+                        string answer = ans.ToString();
+                        return answer;
+
+                    }
+
+                    else if (secondaction == "+"){
+                        
+                        double pt1 = ax * b;
+                        double pt1pt2 = pt1 - cx;
+                        double ans = d / pt1pt2;
+                        string answer = ans.ToString();
+                        return answer;
+                    }
+
+
+                    else if (secondaction == "*"){
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Environment.Exit(0);
+                    }
+
+                    else if (secondaction == "/"){
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Environment.Exit(0);
+                    }
+
+                }
+
+                if (firstaction == "/"){
+                    if (secondaction == "-"){
+
+                        //Setup equasion
+                        double anspt1 = -d * b;
+                        double anspt2 = ax - cx;
+                        double ans = anspt1 / anspt2;
+
+                        //Coonvert equasion to string
+                        string answer = ans.ToString();
+                        return answer;
+
+                    }
 
                 else if (secondaction == "+"){
-                    
-                    double pt1 = ax - cx;
-                    double pt2 = b - d;
-                    double ans = pt2 / -pt1;
-                    string answer = ans.ToString();
-                    return answer;
-                }
-
-
-                else if (secondaction == "*"){
-                    double pt1 = cx * d;
-                    
-                    double pt1pt2 = pt1 - ax;
-                    
-                    double ans = -b / pt1pt2;
-                    
-                    string answer = ans.ToString();
-                    return answer;
-                }
-
-                else if (secondaction == "/"){
-                    double pt1 = cx / d;
-                    double pt1pt2 = ax - pt1;
-                    double ans = b / -pt1pt2;
-                    string answer = ans.ToString();
-                    return answer;
-                }
-            }
-
-
-            if (firstaction == "-"){
-                if (secondaction == "-"){
-
-                    double pt1 = ax - cx;
-                    double pt2 = b - d;
-                    double ans = pt2 / pt1;
-                    string answer = ans.ToString();
-                    return answer;
-
-                }
-
-                else if (secondaction == "+"){
-                    
-                    double pt1 = ax - cx;
-                    double pt2 = b + d;
-                    double ans = pt2 / pt1;
-                    string answer = ans.ToString();
-                    return answer;
-                }
-
-
-                else if (secondaction == "*"){
-                    double pt1 = cx * d;
-                    
-                    double pt1pt2 = pt1 - ax;
-                    
-                    double ans = -b / pt1pt2;
-                    
-                    string answer = ans.ToString();
-                    return answer;
-                }
-
-                else if (secondaction == "/"){
-                    double pt1 = cx / d;
-                    double pt1pt2 = ax - pt1;
-                    double ans = b / pt1pt2;
-                    string answer = ans.ToString();
-                    return answer;
-                }
-            }
-
-            if (firstaction == "*"){
-                if (secondaction == "-"){
-
-                    double pt1 = ax * b;
-                    double pt1pt2 = pt1 - cx;
-                    double ans = -d / pt1pt2;
-                    string answer = ans.ToString();
-                    return answer;
-
-                }
-
-                else if (secondaction == "+"){
-                    
-                    double pt1 = ax * b;
-                    double pt1pt2 = pt1 - cx;
-                    double ans = d / pt1pt2;
-                    string answer = ans.ToString();
-                    return answer;
-                }
-
-
-                else if (secondaction == "*"){
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Environment.Exit(0);
-                }
-
-                else if (secondaction == "/"){
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Environment.Exit(0);
-                }
-
-            }
-
-            if (firstaction == "/"){
-                if (secondaction == "-"){
-
                     //Setup equasion
-                    double anspt1 = -d * b;
+                    double anspt1 = d - b;
                     double anspt2 = ax - cx;
                     double ans = anspt1 / anspt2;
 
-                    //Coonvert equasion to string
+                    //Convert equasion to string
                     string answer = ans.ToString();
                     return answer;
-
                 }
 
-            else if (secondaction == "+"){
-                //Setup equasion
-                double anspt1 = d - b;
-                double anspt2 = ax - cx;
-                double ans = anspt1 / anspt2;
 
-                //Convert equasion to string
-                string answer = ans.ToString();
-                return answer;
+                else if (secondaction == "*"){
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Environment.Exit(0);
+                }
+
+                else if (secondaction == "/"){
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Environment.Exit(0);
+                }
+
+                
+                }
+
+                return "Error: you done messed up";
             }
-
-
-            else if (secondaction == "*"){
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                Console.ForegroundColor = ConsoleColor.White;
-                Environment.Exit(0);
-            }
-
-            else if (secondaction == "/"){
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                Console.ForegroundColor = ConsoleColor.White;
-                Environment.Exit(0);
-            }
-
-            
-            }
-
-            return "Error: you done messed up";
-        }
 
         public static string PercentOf(string equasion)
         {
-            //8% of 12
-            string[] splitequasion = equasion.Split("of");
-            string percent = splitequasion[0];
-            string totalvalue = splitequasion[1];
-            
+                //8% of 12
+                string[] splitequasion = equasion.Split("of");
+                string percent = splitequasion[0];
+                string totalvalue = splitequasion[1];
+                
 
-            percent = percent.Replace("%", "");
+                percent = percent.Replace("%", "");
 
-            try
-            {
-                double test1 = double.Parse(percent);
-                double test2 = double.Parse(totalvalue);
-            }
+                try
+                {
+                    double test1 = double.Parse(percent);
+                    double test2 = double.Parse(totalvalue);
+                }
 
-            catch
-            {
-                Evanslib.exitError("Equasion is inputted wrong", 2);
-            }
+                catch
+                {
+                    Evanslib.exitError("Equasion is inputted wrong", 2);
+                }
 
-            double part1 = double.Parse(percent);
-            double part2 = double.Parse(totalvalue);
-            return (part1 / part2 * 100).ToString();
+                double part1 = double.Parse(percent);
+                double part2 = double.Parse(totalvalue);
+                return (part1 / part2 * 100).ToString();
         }
 
     }
