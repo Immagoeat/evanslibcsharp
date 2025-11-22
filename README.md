@@ -5,6 +5,9 @@ Next version is being worked on and will include 'FindX' and 'FindMultiX' functi
 
 # Versions
 
+## 1.3.3
+Added PercentOf, which can be found in [Math](README.md#math)
+
 ## 1.3.2
 Added FindX and FindMultiX functions, check [Math](README.md#math) for more info
 
@@ -116,6 +119,11 @@ You can now find the value of 'x'. You can add, subtract, multiply, or divide.
 You can solve a problem like ax + b = cx + d, but any kind of sign works.
 
     Evansmath.FindMultiX("2x + 3 = 8x - 11");
+
+### PercentOf
+You can find the percent value of a number with the following code.
+
+    Evansmath.PercentOf("X% of Y");
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
