@@ -416,7 +416,7 @@ namespace evanslib{
 
                 double part1 = double.Parse(percent);
                 double part2 = double.Parse(totalvalue);
-                return (part1 / part2 * 100).ToString();
+                return (part1 * part2 / 100).ToString();
         }
 
     }

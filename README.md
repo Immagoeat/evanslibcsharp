@@ -5,6 +5,9 @@ Next version is being worked on and will include 'FindX' and 'FindMultiX' functi
 
 # Versions
 
+## 1.3.4
+Fixed errors with PercentOf
+
 ## 1.3.3
 Added PercentOf, which can be found in [Math](README.md#math)
 
