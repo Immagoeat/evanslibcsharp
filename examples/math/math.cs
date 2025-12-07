@@ -6,7 +6,7 @@ class Program
 
     public static void Main(string[] args)
     {
-        var bob = Evansmath.PercentOf("25% of 200");
+        var bob = Evansmath.PercentIncrease(20, 10);
         Evanslib.Print(bob);
     }    
 

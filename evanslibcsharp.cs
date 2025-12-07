@@ -419,5 +419,27 @@ namespace evanslib{
                 return (part1 * part2 / 100).ToString();
         }
 
+        public static string PercentIncrease(double start, double end)
+        {
+            double bob = ((end - start)/start) * 100;
+            if (bob >= 0)
+            {
+                string ans = bob.ToString() + "% (increase)";
+                return ans;
+            }
+
+            else if (bob < 0)
+            {
+                string ans = bob.ToString() + "% (decrease)";
+                return ans;
+            }
+
+            else
+            {
+                return "";
+            }
+            
+        }
+
     }
 }

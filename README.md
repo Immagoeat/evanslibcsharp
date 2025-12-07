@@ -5,6 +5,9 @@ Next version is being worked on and will include 'FindX' and 'FindMultiX' functi
 
 # Versions
 
+## 1.3.5
+Added PercentIncrease, can be found in the [Math](README.md#math) section
+
 ## 1.3.4
 Fixed errors with PercentOf
 
@@ -127,6 +130,11 @@ You can solve a problem like ax + b = cx + d, but any kind of sign works.
 You can find the percent value of a number with the following code.
 
     Evansmath.PercentOf("X% of Y");
+
+### PercentIncrease
+To find the percent of increase or decrease of a gap between numbers.
+
+    Evansmath.PercentIncrease(OLDNUMBER, NEWNUMBER);
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
