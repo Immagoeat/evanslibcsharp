@@ -159,4 +159,4 @@ Run the following command in the terminal of your folder (can go up to 1.1.2)
 
     dotnet add package EvansLib --version 1.1.0
 
-Then, enter "using Evanslib;" in your code
+Then, enter "using evanslib;" in your code
