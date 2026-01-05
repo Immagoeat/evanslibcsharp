@@ -35,10 +35,7 @@ namespace evanslib{
             string? input = Console.ReadLine();
             if (string.IsNullOrEmpty(input)){
                 
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("EVANSLIB ERROR (1): Input of 'null' (ELER1)");
-                Console.ForegroundColor = ConsoleColor.White;
-                Environment.Exit(0);
+                throw new InvalidOperationException("Evanslib error: Input of 'null.'");
                 return "";
             }
             return input;
@@ -122,7 +119,7 @@ namespace evanslib{
                 }
 
                 catch{
-                    Evanslib.exitError("Can't use strings in equasion except for 'x'", 1);
+                    throw new InvalidOperationException("Evanslib error: Can not use strings in equasion other than 'x.'");
                 }
 
 
@@ -332,17 +329,11 @@ namespace evanslib{
 
 
                     else if (secondaction == "*"){
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Environment.Exit(0);
+                        throw new InvalidOperationException("Evanslib error: Equasion can not be solved/no solution.");
                     }
 
                     else if (secondaction == "/"){
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Environment.Exit(0);
+                        throw new InvalidOperationException("Evanslib error: Equasion can not be solved/no solution.");
                     }
 
                 }
@@ -374,17 +365,11 @@ namespace evanslib{
 
 
                 else if (secondaction == "*"){
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Environment.Exit(0);
+                    throw new InvalidOperationException("Evanslib error: Equasion can not be solved/no solution.");
                 }
 
                 else if (secondaction == "/"){
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("EVANSLIB/EVANSMATH ERROR (2): Equation can not be solved/no solution possible (ELER2)");
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Environment.Exit(0);
+                    throw new InvalidOperationException("Evanslib error: Equasion can not be solved/no solution.");
                 }
 
                 
@@ -411,7 +396,7 @@ namespace evanslib{
 
                 catch
                 {
-                    Evanslib.exitError("Equasion is inputted wrong", 2);
+                    throw new InvalidOperationException("Evanslib error: Equasion inputted wrong.");
                 }
 
                 double part1 = double.Parse(percent);
