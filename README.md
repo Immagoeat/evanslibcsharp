@@ -4,6 +4,9 @@ The github will be more updated than the NuGet page, may be unstable or crash.
 
 # Versions
 
+## 1.3.6
+Changed to let user handle errors instead of crashing the program and handling it in the library
+
 ## 1.3.5
 Added PercentIncrease, can be found in the [Math](README.md#math) section
 
