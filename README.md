@@ -1,5 +1,5 @@
 # Evan's Library to C#
-Evanslib for C# is a great, more user-friendly way to code in C#
+Evanslib for C# is a great, more user-friendly way to code in C#.
 The github will be more updated than the NuGet page, may be unstable or crash.
 
 # Versions
