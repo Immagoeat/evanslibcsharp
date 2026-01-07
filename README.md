@@ -34,6 +34,17 @@ In Evanslib version 1.1.1, error numbers are integers and no longer strings
 ## 1.1.0
 Default benchmark, goes up to version 1.1.2
 
+# How to import
+To import Evanslib into your project, you can use the function of
+
+    using evanslib;
+
+If you want to use Evansmath as well, you can use
+
+    using evansmath;
+
+You can use both if you need to, however they work as their own thing, and will decrease compile times while making my life easier when coding this
+
 # Commands
 Here you will see a list of all the commands in Evanslib
 
