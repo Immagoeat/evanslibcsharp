@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace evansmath
 {
     public class Evansmath{
@@ -24,10 +26,23 @@ namespace evansmath
 
 
 
-        public static string FindX(string equasion)
+        public static string FindX(string equasion){
+                
+            char[] delimeters = ['+', '-', '*', '/'];
+
+            string withoutspaces = equasion.Replace(" ", "");
+
+            string[] firstsplit = equasion.Split("=");
+            string oldleft = firstsplit[0];
+            string oldright = firstsplit[1];
+
+            for (int i = 0; i < 5; i++)
             {
-                return "";
+                
             }
+
+            return withoutspaces;
+        }
 
         public static string PercentOf(string equasion)
         {
