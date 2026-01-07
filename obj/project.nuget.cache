@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uXgS1eosbFk=",
+  "dgSpecHash": "/N499rM+has=",
   "success": true,
   "projectFilePath": "/home/evan/Desktop/evanslibcsharp/evanslibcsharp.csproj",
-  "expectedPackageFiles": [
-    "/home/evan/.nuget/packages/godotsharp/4.5.1/godotsharp.4.5.1.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

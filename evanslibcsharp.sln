@@ -2,9 +2,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "evanslibcsharp", "evanslibcsharp.csproj", "{ABA7A1F9-0F00-6C6C-B044-107F9B000DA6}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{B36A84DF-456D-A817-6EDD-3EC3E7F6E11F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clock", "examples\clock\clock.csproj", "{BC174D6A-1CD9-D9CD-652A-C4B28797C448}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "login_sys", "examples\login_sys\login_sys.csproj", "{7A204344-16C7-D94D-0BBC-F03EDC2622B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "math", "examples\math\math.csproj", "{81AD48F1-98DA-009C-A5DA-F2CBF0F49C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minimalist_calendar", "examples\minimalist_calendar\minimalist_calendar.csproj", "{C9B42546-8542-12CA-F7C0-6F3B5112BCDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,18 +20,37 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABA7A1F9-0F00-6C6C-B044-107F9B000DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA7A1F9-0F00-6C6C-B044-107F9B000DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA7A1F9-0F00-6C6C-B044-107F9B000DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA7A1F9-0F00-6C6C-B044-107F9B000DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC174D6A-1CD9-D9CD-652A-C4B28797C448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC174D6A-1CD9-D9CD-652A-C4B28797C448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC174D6A-1CD9-D9CD-652A-C4B28797C448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC174D6A-1CD9-D9CD-652A-C4B28797C448}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A204344-16C7-D94D-0BBC-F03EDC2622B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A204344-16C7-D94D-0BBC-F03EDC2622B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A204344-16C7-D94D-0BBC-F03EDC2622B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A204344-16C7-D94D-0BBC-F03EDC2622B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81AD48F1-98DA-009C-A5DA-F2CBF0F49C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81AD48F1-98DA-009C-A5DA-F2CBF0F49C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81AD48F1-98DA-009C-A5DA-F2CBF0F49C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81AD48F1-98DA-009C-A5DA-F2CBF0F49C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B42546-8542-12CA-F7C0-6F3B5112BCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B42546-8542-12CA-F7C0-6F3B5112BCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B42546-8542-12CA-F7C0-6F3B5112BCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B42546-8542-12CA-F7C0-6F3B5112BCDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{BC174D6A-1CD9-D9CD-652A-C4B28797C448} = {B36A84DF-456D-A817-6EDD-3EC3E7F6E11F}
 		{7A204344-16C7-D94D-0BBC-F03EDC2622B7} = {B36A84DF-456D-A817-6EDD-3EC3E7F6E11F}
+		{81AD48F1-98DA-009C-A5DA-F2CBF0F49C46} = {B36A84DF-456D-A817-6EDD-3EC3E7F6E11F}
+		{C9B42546-8542-12CA-F7C0-6F3B5112BCDE} = {B36A84DF-456D-A817-6EDD-3EC3E7F6E11F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {03088A9B-C2BE-4351-B134-72D14FA22081}
+		SolutionGuid = {F8A51D52-A927-4575-9C23-E7CB0AFEFCF2}
 	EndGlobalSection
 EndGlobal
