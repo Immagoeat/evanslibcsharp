@@ -170,6 +170,6 @@ If you would like to exit altogether, you can call
 # How to setup
 Run the following command in the terminal of your folder (can go up to 1.1.2)
 
-    dotnet add package EvansLib --version 1.1.0
+    dotnet add package EvansLib
 
 Then, enter "using evanslib;" in your code
