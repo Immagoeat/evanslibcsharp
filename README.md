@@ -1,9 +1,11 @@
 # Evan's Library to C#
-Evanslib for C# is a great, more user-friendly way to code in C#
+Evanslib for C# is a great, more user-friendly way to code in C#.
 The github will be more updated than the NuGet page, may be unstable or crash.
-Next version is being worked on and will include 'FindX' and 'FindMultiX' functions. These can find a missing value in an equasion. FindX is in the 1.2.1-pre and FindMultiX still doesn't work. If a version is skipped, there was an issue with it.
 
 # Versions
+
+## 1.3.6
+Changed to let user handle errors instead of crashing the program and handling it in the library
 
 ## 1.3.5
 Added PercentIncrease, can be found in the [Math](README.md#math) section
