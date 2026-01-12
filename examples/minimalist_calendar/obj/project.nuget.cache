@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "veUFC9+vNCM=",
+  "dgSpecHash": "LjABWv+9Vk0=",
   "success": true,
-  "projectFilePath": "/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/minimalist_calendar.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/evanslibcsharp/examples/minimalist_calendar/minimalist_calendar.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.11/microsoft.netcore.app.host.linux-x64.9.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

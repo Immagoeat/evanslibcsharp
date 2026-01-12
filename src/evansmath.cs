@@ -27,21 +27,31 @@ namespace evansmath
 
 
         public static string FindX(string equasion){
+
+            //Debug mode (dev use)
+            bool debug = true;
                 
             char[] delimeters = ['+', '-', '*', '/'];
 
             string withoutspaces = equasion.Replace(" ", "");
 
-            string[] firstsplit = equasion.Split("=");
+            string[] firstsplit = withoutspaces.Split("=");
             string oldleft = firstsplit[0];
             string oldright = firstsplit[1];
 
-            for (int i = 0; i < 5; i++)
+            string[] hasxleft = 
+
+            //Check for debug mode
+            if (debug)
             {
-                
+                return ("Full:" + withoutspaces + " Left:" + oldleft + " Right:" + oldright);
             }
 
-            return withoutspaces;
+            else
+            {
+                return withoutspaces;
+            }
+            
         }
 
         public static string PercentOf(string equasion)

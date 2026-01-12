@@ -10,3 +10,15 @@
 /home/evan/Desktop/evanslibcsharp/obj/Debug/net9.0/refint/evanslibcsharp.dll
 /home/evan/Desktop/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.pdb
 /home/evan/Desktop/evanslibcsharp/obj/Debug/net9.0/ref/evanslibcsharp.dll
+/workspaces/evanslibcsharp/bin/Debug/net9.0/evanslibcsharp.deps.json
+/workspaces/evanslibcsharp/bin/Debug/net9.0/evanslibcsharp.dll
+/workspaces/evanslibcsharp/bin/Debug/net9.0/evanslibcsharp.pdb
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.AssemblyInfoInputs.cache
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.AssemblyInfo.cs
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.csproj.CoreCompileInputs.cache
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.sourcelink.json
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.dll
+/workspaces/evanslibcsharp/obj/Debug/net9.0/refint/evanslibcsharp.dll
+/workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.pdb
+/workspaces/evanslibcsharp/obj/Debug/net9.0/ref/evanslibcsharp.dll
