@@ -1,4 +1,7 @@
 using System.Numerics;
+using System.Text.RegularExpressions;
+using evanslib;
+
 
 namespace evansmath
 {
@@ -29,28 +32,41 @@ namespace evansmath
         public static string FindX(string equasion){
 
             //Debug mode (dev use)
-            bool debug = true;
+            //bool debug = true;
                 
-            char[] delimeters = ['+', '-', '*', '/'];
+            //char[] delimeters = ['+', '-', '*', '/'];
 
-            string withoutspaces = equasion.Replace(" ", "");
+            //string withoutspaces = equasion.Replace(" ", "");
 
-            string[] firstsplit = withoutspaces.Split("=");
-            string oldleft = firstsplit[0];
-            string oldright = firstsplit[1];
+            //string[] firstsplit = withoutspaces.Split("=");
+            //string oldleft = firstsplit[0];
+            //string oldright = firstsplit[1];
 
-            string[] hasxleft = 
+            //Need to get all x values on left in a []
+
+            //string[] hasxleft;
 
             //Check for debug mode
-            if (debug)
+            //if (debug)
+            //{
+              //  return ("Full:" + withoutspaces + " Left:" + oldleft + " Right:" + oldright);
+            //}
+
+            //else
+            //{
+              //  return withoutspaces;
+            //}
+
+            var matches = Regex.Matches(equasion, @"\bx\s*=\s*(-?\d+(\.\d+)?)");
+
+            string[] result = new string[matches.Count];
+
+            for (int i = 0; i < matches.Count; i++)
             {
-                return ("Full:" + withoutspaces + " Left:" + oldleft + " Right:" + oldright);
+                result[i] = matches[i].Groups[1].Value;
             }
 
-            else
-            {
-                return withoutspaces;
-            }
+            return "";
             
         }
 
