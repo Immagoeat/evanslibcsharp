@@ -32,43 +32,28 @@ namespace evansmath
         public static string FindX(string equasion){
 
             //Debug mode (dev use)
-            bool debug = true;
-                
-            //char[] delimeters = ['+', '-', '*', '/'];
 
-            string withoutspaces = equasion.Replace(" ", "");
+            double a = 0;
+            double b = 0;
+            double side = 1;
 
-            string[] firstsplit = withoutspaces.Split("=");
-            string oldleft = firstsplit[0];
-            string oldright = firstsplit[1];
-
-            
-
-            
-            
-
-
-            var matches = Regex.Matches(equasion, @"\bx\s*=\s*(-?\d+(\.\d+)?)");
-
-            string[] result = new string[matches.Count];
-
-            for (int i = 0; i < matches.Count; i++)
+            foreach (var part in equasion.Replace(" ", "").Split("="))
             {
-                result[i] = matches[i].Groups[1].Value;
+                foreach (Match match in Regex.Matches(part, @"[+-]?\d*x|[+-]?\d+"))
+                {
+                    string str = match.Value;
+                    if (str.EndsWith("x"))
+                    {
+                        str = str.Replace("x", "");
+                        double value = (str == "" || str == "+") ? 1 : (str == "-") ? -1 : double.Parse(str);
+                        a += value * side;
+                    }
+                    else b += double.Parse(str) * side;
+                }
+                side = -1;
             }
-
-            
-
-            if (debug)
-            {
-               return ("Full:" + withoutspaces + " Left:" + oldleft + " Right:" + oldright);
-            }
-
-            else
-            {
-                return string.Join(" ", result);
-            }
-            
+            if (a == 0) return b == 0 ? "Infinite solutions" : "No solutions";
+            return $"x = {-b / a}"; 
         }
 
         public static string PercentOf(string equasion)
