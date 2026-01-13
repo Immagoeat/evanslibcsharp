@@ -5,7 +5,7 @@ The github will be more updated than the NuGet page, may be unstable or crash.
 # Versions
 
 ## 1.3.7
-Updated the FindX function, now can solve anything. See more in [FindX](README.md#math/findx).
+Updated the FindX function, now can solve anything. See more in [FindX](README.md#math#findx).
 
 ## 1.3.6
 Changed to let user handle errors instead of crashing the program and handling it in the library
