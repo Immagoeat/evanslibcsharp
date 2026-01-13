@@ -32,30 +32,21 @@ namespace evansmath
         public static string FindX(string equasion){
 
             //Debug mode (dev use)
-            //bool debug = true;
+            bool debug = true;
                 
             //char[] delimeters = ['+', '-', '*', '/'];
 
-            //string withoutspaces = equasion.Replace(" ", "");
+            string withoutspaces = equasion.Replace(" ", "");
 
-            //string[] firstsplit = withoutspaces.Split("=");
-            //string oldleft = firstsplit[0];
-            //string oldright = firstsplit[1];
+            string[] firstsplit = withoutspaces.Split("=");
+            string oldleft = firstsplit[0];
+            string oldright = firstsplit[1];
 
-            //Need to get all x values on left in a []
+            
 
-            //string[] hasxleft;
+            
+            
 
-            //Check for debug mode
-            //if (debug)
-            //{
-              //  return ("Full:" + withoutspaces + " Left:" + oldleft + " Right:" + oldright);
-            //}
-
-            //else
-            //{
-              //  return withoutspaces;
-            //}
 
             var matches = Regex.Matches(equasion, @"\bx\s*=\s*(-?\d+(\.\d+)?)");
 
@@ -66,7 +57,17 @@ namespace evansmath
                 result[i] = matches[i].Groups[1].Value;
             }
 
-            return "";
+            
+
+            if (debug)
+            {
+               return ("Full:" + withoutspaces + " Left:" + oldleft + " Right:" + oldright);
+            }
+
+            else
+            {
+                return string.Join(" ", result);
+            }
             
         }
 
