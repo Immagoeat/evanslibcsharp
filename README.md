@@ -40,6 +40,14 @@ In Evanslib version 1.1.1, error numbers are integers and no longer strings
 ## 1.1.0
 Default benchmark, goes up to version 1.1.2
 
+
+# How to setup
+Run the following command in the terminal of your folder (can go up to 1.1.2)
+
+    dotnet add package EvansLib
+
+Then, enter "using evanslib;" in your code
+
 # How to import
 To import Evanslib into your project, you can use the function of
 
@@ -172,10 +180,3 @@ In the case you need to exit with an error, call
 If you would like to exit altogether, you can call
 
     Exit();
-
-# How to setup
-Run the following command in the terminal of your folder (can go up to 1.1.2)
-
-    dotnet add package EvansLib
-
-Then, enter "using evanslib;" in your code
