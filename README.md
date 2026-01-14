@@ -2,7 +2,8 @@
 Evanslib for C# is a great, more user-friendly way to code in C#.
 The github will be more updated than the NuGet page, may be unstable or crash.
 
-![Static Badge](https://img.shields.io/badge/Nuget_Page-blue)(nuget.org/packages.evanslib)
+![Static Badge][<img width="108" height="28" alt="image" src="https://github.com/user-attachments/assets/7d282908-0c47-448c-a5ff-d2053aa73ba8" />]
+
 # Versions
 
 ## 1.3.7
