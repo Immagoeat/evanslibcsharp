@@ -1,11 +1,18 @@
 # Evan's Library to C#
-Evanslib for C# is a great, more user-friendly way to code in C#.
-The github will be more updated than the NuGet page, may be unstable or crash.
+
+> Evanslib for C# is a great, more user-friendly way to code in C#. The github will be more updated than the NuGet page, may be unstable or crash.
+
+[![NuGet page](https://img.shields.io/badge/NuGet_page-1.3.6-blue.svg)](https://nuget.org/packages/evanslib)
+[![Github page](https://img.shields.io/badge/Github_page-1.3.7-blue.svg)](https://github.com/Immagoeat/evanslibcsharp)
 
 # Versions
 
 ## 1.3.7
+<<<<<<< HEAD
 Re-worked FindX, also changed the name from PercentIncrease to PercentChange.
+=======
+Updated the FindX function, now can solve anything. See more in [FindX](README.md#math).
+>>>>>>> refs/remotes/origin/main
 
 ## 1.3.6
 Changed to let user handle errors instead of crashing the program and handling it in the library.
@@ -110,7 +117,7 @@ To add a name and value to the dictionary, call
     Evanslib.modifyDict(DICTIONARYNAME, "NAME", "VALUE"); (Creates an entry in the dictionary with a name and value, outputs "NAME: VALUE")
 
 ## Math
-Evansmath is an easy and basic math system. This will be updated more later on but it's a good place to start
+Evansmath is an easy and basic math system.
 
 ### Adding
 To add, you would
@@ -137,10 +144,10 @@ You can now find the value of 'x'. You can add, subtract, multiply, or divide.
 
     Evansmath.FindX("x + 12 = 14");
 
-### FindMultiX
-You can solve a problem like ax + b = cx + d, but any kind of sign works.
+You can also do more complicated equasions, like
 
-    Evansmath.FindMultiX("2x + 3 = 8x - 11");
+    Evansmath.FindX("17x - 42 + 8x - 13 - 6x + 91 - 25x + 4 + 39x - 7 - 18 + 2x - 11 = 54x - 120 + 6 - 31x + 9x - 14");
+
 
 ### PercentOf
 You can find the percent value of a number with the following code.
