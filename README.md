@@ -8,11 +8,7 @@
 # Versions
 
 ## 1.3.7
-<<<<<<< HEAD
-Re-worked FindX, also changed the name from PercentIncrease to PercentChange.
-=======
-Updated the FindX function, now can solve anything. See more in [FindX](README.md#math).
->>>>>>> refs/remotes/origin/main
+Re-worked FindX, also changed the name from PercentIncrease to PercentChange. Find more in [Math](README.md#math)
 
 ## 1.3.6
 Changed to let user handle errors instead of crashing the program and handling it in the library.
