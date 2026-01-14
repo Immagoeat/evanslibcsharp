@@ -3,6 +3,7 @@
 > Evanslib for C# is a great, more user-friendly way to code in C#. The github will be more updated than the NuGet page, may be unstable or crash.
 
 [![NuGet page](https://img.shields.io/badge/NuGet_page-1.3.6-blue.svg)](https://nuget.org/packages/evanslib)
+[![Github page](https://img.shields.io/badge/Github_page-1.3.6-blue.svg)](https://github.com/Immagoeat/evanslibcsharp)
 
 # Versions
 
