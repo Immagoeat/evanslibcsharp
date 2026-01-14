@@ -11,7 +11,7 @@
 Added DebugMode in [Evansmath](README.md#math)
 
 ## 1.3.7
-Re-worked FindX, also changed the name from PercentIncrease to PercentChange. Find more in [Math](README.md#math)
+Re-worked [FindX](README.md#findx), also changed the name from PercentIncrease to [PercentChange](README.md#percentchange).
 
 ## 1.3.6
 Changed to let user handle errors instead of crashing the program and handling it in the library.
