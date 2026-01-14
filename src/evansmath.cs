@@ -82,7 +82,7 @@ namespace evansmath
                 return (part1 * part2 / 100).ToString();
         }
 
-        public static string PercentIncrease(double start, double end)
+        public static string PercentChange(double start, double end)
         {
             double bob = ((end - start)/start) * 100;
             if (bob >= 0)

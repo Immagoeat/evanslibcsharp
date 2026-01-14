@@ -4,8 +4,11 @@ The github will be more updated than the NuGet page, may be unstable or crash.
 
 # Versions
 
+## 1.3.7
+Re-worked FindX, also changed the name from PercentIncrease to PercentChange.
+
 ## 1.3.6
-Changed to let user handle errors instead of crashing the program and handling it in the library
+Changed to let user handle errors instead of crashing the program and handling it in the library.
 
 ## 1.3.5
 Added PercentIncrease, can be found in the [Math](README.md#math) section
@@ -144,10 +147,10 @@ You can find the percent value of a number with the following code.
 
     Evansmath.PercentOf("X% of Y");
 
-### PercentIncrease
+### PercentChange
 To find the percent of increase or decrease of a gap between numbers.
 
-    Evansmath.PercentIncrease(OLDNUMBER, NEWNUMBER);
+    Evansmath.PercentChange(OLDNUMBER, NEWNUMBER);
 
 ## Errors
 Calling an error, exiting with an error, or exiting all together, it's easy with Evanslib
