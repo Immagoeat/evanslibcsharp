@@ -49,7 +49,7 @@ Default benchmark, goes up to version 1.1.2
 
 
 # How to setup
-Run the following command in the terminal of your folder (can go up to 1.1.2)
+Run the following command in the terminal of your folder
 
     dotnet add package EvansLib
 
