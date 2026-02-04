@@ -2,10 +2,13 @@
 
 > Evanslib for C# is a great, more user-friendly way to code in C#. The github will be more updated than the NuGet page, may be unstable or crash.
 
-[![NuGet page](https://img.shields.io/badge/NuGet_page-1.3.6-blue.svg)](https://nuget.org/packages/evanslib)
-[![Github page](https://img.shields.io/badge/Github_page-1.3.7-blue.svg)](https://github.com/Immagoeat/evanslibcsharp)
+[![NuGet page](https://img.shields.io/badge/NuGet_page-1.3.7-blue.svg)](https://nuget.org/packages/evanslib)
+[![Github page](https://img.shields.io/badge/Github_page-1.3.8-blue.svg)](https://github.com/Immagoeat/evanslibcsharp)
 
 # Versions
+
+## 1.3.8
+Added DebugMode in [Evansmath](README.md#math)
 
 ## 1.3.7
 Re-worked FindX, also changed the name from PercentIncrease to PercentChange. Find more in [Math](README.md#math)
@@ -114,6 +117,11 @@ To add a name and value to the dictionary, call
 
 ## Math
 Evansmath is an easy and basic math system.
+
+###Debugging
+Evanslib can help you figure out what is happening in your code. This debug mode is automatically set to true. To set it to false and get the straight numbers, you can run the following at the top of your code.
+
+    Evansmath.DebugMode = false;
 
 ### Adding
 To add, you would

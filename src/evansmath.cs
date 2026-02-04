@@ -6,6 +6,8 @@ using evanslib;
 namespace evansmath
 {
     public class Evansmath{
+
+        public static bool DebugMode;
         
         public static double Add(double first, double second){
             double ans = first + second;
@@ -53,7 +55,9 @@ namespace evansmath
                 side = -1;
             }
             if (a == 0) return b == 0 ? "Infinite solutions" : "No solutions";
-            return $"x = {-b / a}"; 
+            if (DebugMode == false){return $"{-b / a}";}
+            else{return $"x = {-b / a}"; }
+                
         }
 
         public static string PercentOf(string equasion)
@@ -87,14 +91,18 @@ namespace evansmath
             double bob = ((end - start)/start) * 100;
             if (bob >= 0)
             {
-                string ans = bob.ToString() + "% (increase)";
-                return ans;
+                if (DebugMode == false){string ans = bob.ToString(); return ans;}
+                else{
+                string ans = bob.ToString() + "% (increase)"; return ans;
+                }
             }
 
             else if (bob < 0)
             {
-                string ans = bob.ToString() + "% (decrease)";
-                return ans;
+                if (DebugMode == false){string ans = bob.ToString(); return ans;}
+                else{
+                string ans = bob.ToString() + "% (decrease)"; return ans;
+                }
             }
 
             else
