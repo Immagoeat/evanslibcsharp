@@ -33,8 +33,6 @@ namespace evansmath
 
         public static string FindX(string equasion){
 
-            //Debug mode (dev use)
-
             double a = 0;
             double b = 0;
             double side = 1;
@@ -101,7 +99,7 @@ namespace evansmath
             {
                 if (DebugMode == false){string ans = bob.ToString(); return ans;}
                 else{
-                string ans = bob.ToString() + "% (decrease)"; return ans;
+                   string ans = bob.ToString() + "% (decrease)"; return ans;
                 }
             }
 
