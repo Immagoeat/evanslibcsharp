@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5701afd76bbc6d7ecbcb40e042a1a1f84020e76")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86df2b0efd0df2941eb2141aaac35e4c128bd8b2")]
+>>>>>>> refs/remotes/origin/main
 [assembly: System.Reflection.AssemblyProductAttribute("clock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

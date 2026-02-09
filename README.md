@@ -4,8 +4,11 @@
 
 [![NuGet page](https://img.shields.io/badge/NuGet_page-1.3.7-blue.svg)](https://nuget.org/packages/evanslib)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Github page](https://img.shields.io/badge/Github_page-1.3.8-blue.svg)](https://github.com/Immagoeat/evanslibcsharp)
 =======
+=======
+>>>>>>> refs/remotes/origin/main
 [![Github page](https://img.shields.io/badge/Github_page-1.3.7-blue.svg)](https://github.com/Immagoeat/evanslibcsharp)
 >>>>>>> e54942d (Pushed to NuGet)
 

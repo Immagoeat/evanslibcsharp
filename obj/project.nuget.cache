@@ -1,11 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "cXySSMjwSk0=",
+=======
+  "dgSpecHash": "QmCy2Evx954=",
+>>>>>>> refs/remotes/origin/main
   "success": true,
-  "projectFilePath": "/workspaces/evanslibcsharp/evanslibcsharp.csproj",
-  "expectedPackageFiles": [
-    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
-    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/evan/Desktop/evanslibcsharp/evanslibcsharp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
