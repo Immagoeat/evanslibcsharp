@@ -126,7 +126,7 @@ To add a name and value to the dictionary, call
 ## Math
 Evansmath is an easy and basic math system.
 
-###Debugging
+### Debugging
 Evanslib can help you figure out what is happening in your code. This debug mode is automatically set to true. To set it to false and get the straight numbers, you can run the following at the top of your code.
 
     Evansmath.DebugMode = false;
