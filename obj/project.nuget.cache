@@ -1,21 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cXySSMjwSk0=",
+  "dgSpecHash": "94TVPlTTPsY=",
   "success": true,
-  "projectFilePath": "/workspaces/evanslibcsharp/evanslibcsharp.csproj",
-  "expectedPackageFiles": [
-    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
-    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file /workspaces/evanslibcsharp/obj/project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "/workspaces/evanslibcsharp/evanslibcsharp.csproj",
-      "warningLevel": 1,
-      "filePath": "/workspaces/evanslibcsharp/evanslibcsharp.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "projectFilePath": "/home/evan/Desktop/evanslibcsharp/evanslibcsharp.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }
