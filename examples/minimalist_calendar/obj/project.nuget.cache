@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "veUFC9+vNCM=",
+  "dgSpecHash": "5tUAD6Fb3io=",
   "success": true,
   "projectFilePath": "/home/evan/Desktop/evanslibcsharp/examples/minimalist_calendar/minimalist_calendar.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/evan/.nuget/packages/raylib-cs/7.0.2/raylib-cs.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
