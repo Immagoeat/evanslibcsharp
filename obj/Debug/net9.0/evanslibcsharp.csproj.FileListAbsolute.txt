@@ -22,3 +22,4 @@
 /workspaces/evanslibcsharp/obj/Debug/net9.0/refint/evanslibcsharp.dll
 /workspaces/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.pdb
 /workspaces/evanslibcsharp/obj/Debug/net9.0/ref/evanslibcsharp.dll
+/home/evan/Desktop/evanslibcsharp/obj/Debug/net9.0/evanslibcsharp.csproj.AssemblyReference.cache

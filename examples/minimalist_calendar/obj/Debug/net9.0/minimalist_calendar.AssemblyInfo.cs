@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("minimalist_calendar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba4dbf16b4ec9030d722a1649dff6dfffe8e0ccc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e952876fd71d8e816bfbab171621947d15d06da")]
 [assembly: System.Reflection.AssemblyProductAttribute("minimalist_calendar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("minimalist_calendar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
