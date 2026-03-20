@@ -1,5 +1,6 @@
 using Raylib_cs;
 using evansui;
+using System.Diagnostics.Contracts;
 
 namespace HelloWorld;
 
@@ -13,8 +14,8 @@ internal static class Program
 
         while (!Raylib.WindowShouldClose())
         {
-            Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.White);
+            EvansUI.onstart();
+            EvansUI.background(Raylib_cs.Color.Blue);
 
             Raylib.DrawText("Hello, world!", 12, 12, 20, Color.Black);
 
